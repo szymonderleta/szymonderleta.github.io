@@ -3,10 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Szymon Derleta - Projects</title>
+    <title>Szymon Derleta - Full-Stack Developer & Systems Architect</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Szymon Derleta - Full-Stack Developer & Systems Architect specializing in Java, Infrastructure, and Monitoring. Lead at MilkyWay-HomeLabs.">
+    <meta name="keywords" content="Szymon Derleta, Full-Stack Developer, Java, Spring, Infrastructure, Docker, Monitoring, Prometheus, Grafana, MilkyWay-HomeLabs">
+    <meta name="author" content="Szymon Derleta">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://derleta.org/">
+    <meta property="og:title" content="Szymon Derleta - Projects Portfolio">
+    <meta property="og:description" content="Explore the projects of Szymon Derleta, including MilkyWay-HomeLabs ecosystem and Andromeda Auth Server.">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/257604232?s=400">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://derleta.org/">
+    <meta property="twitter:title" content="Szymon Derleta - Projects Portfolio">
+    <meta property="twitter:description" content="Explore the projects of Szymon Derleta, including MilkyWay-HomeLabs ecosystem and Andromeda Auth Server.">
+    <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/257604232?s=400">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/257604232?s=32">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style type="text/tailwindcss">
+        @layer components {
+            .badge {
+                @apply px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider transition-all duration-300 inline-flex items-center;
+            }
+            .badge-blue {
+                @apply bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20;
+            }
+            .badge-emerald {
+                @apply bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 hover:bg-emerald-500/20;
+            }
+            .badge-purple {
+                @apply bg-purple-500/10 text-purple-400 border border-purple-500/20 hover:bg-purple-500/20;
+            }
+            .badge-orange {
+                @apply bg-orange-500/10 text-orange-400 border border-orange-500/20 hover:bg-orange-500/20;
+            }
+            .badge-red {
+                @apply bg-red-500/10 text-red-400 border border-red-500/20 hover:bg-red-500/20;
+            }
+            .badge-pink {
+                @apply bg-pink-500/10 text-pink-400 border border-pink-500/20 hover:bg-pink-500/20;
+            }
+            .section-title {
+                @apply text-3xl font-bold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400;
+            }
+        }
+    </style>
 </head>
 <body class="bg-[#0f172a] text-slate-200 font-sans antialiased">
     <header class="py-24 px-4 relative overflow-hidden">
@@ -27,10 +78,13 @@
                     </p>
                     <div class="flex flex-wrap justify-center md:justify-start gap-6 items-center">
                         <div class="flex space-x-5">
-                            <a href="https://github.com/szymonderleta" class="text-gray-400 hover:text-white transition-all transform hover:scale-110" title="Personal GitHub">
+                            <a href="https://github.com/szymonderleta" class="text-gray-400 hover:text-white transition-all transform hover:scale-110" title="Personal GitHub" aria-label="Personal GitHub Profile">
                                 <i class="fab fa-github text-3xl"></i>
                             </a>
-                            <a href="mailto:szymonderleta@gmail.com" class="text-gray-400 hover:text-white transition-all transform hover:scale-110" title="Email">
+                            <a href="https://www.linkedin.com/in/szymon-derleta-3b7117371/" class="text-gray-400 hover:text-blue-400 transition-all transform hover:scale-110" title="LinkedIn" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin text-3xl"></i>
+                            </a>
+                            <a href="mailto:szymonderleta@gmail.com" class="text-gray-400 hover:text-white transition-all transform hover:scale-110" title="Email" aria-label="Send Email">
                                 <i class="fas fa-envelope text-3xl"></i>
                             </a>
                         </div>
@@ -49,6 +103,32 @@
 
     <main class="max-w-6xl mx-auto px-4 pb-20">
         
+        <!-- Skills Quick Scan Section -->
+        <section class="mb-32 animate-reveal stagger-2">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-6 bg-slate-900/40 backdrop-blur-xl rounded-2xl border border-white/5 text-center group hover:border-blue-500/30 transition-colors">
+                    <i class="fab fa-java text-3xl text-blue-400 mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-sm font-bold text-gray-300 uppercase tracking-widest">Backend</h4>
+                    <p class="text-[10px] text-gray-500 mt-2">Java 21, Spring Boot, JDBC, REST API</p>
+                </div>
+                <div class="p-6 bg-slate-900/40 backdrop-blur-xl rounded-2xl border border-white/5 text-center group hover:border-emerald-500/30 transition-colors">
+                    <i class="fab fa-docker text-3xl text-emerald-400 mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-sm font-bold text-gray-300 uppercase tracking-widest">DevOps</h4>
+                    <p class="text-[10px] text-gray-500 mt-2">Docker, Traefik, GitHub Actions</p>
+                </div>
+                <div class="p-6 bg-slate-900/40 backdrop-blur-xl rounded-2xl border border-white/5 text-center group hover:border-orange-500/30 transition-colors">
+                    <i class="fas fa-chart-line text-3xl text-orange-400 mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-sm font-bold text-gray-300 uppercase tracking-widest">Monitoring</h4>
+                    <p class="text-[10px] text-gray-500 mt-2">Prometheus, Grafana, Logs</p>
+                </div>
+                <div class="p-6 bg-slate-900/40 backdrop-blur-xl rounded-2xl border border-white/5 text-center group hover:border-pink-500/30 transition-colors">
+                    <i class="fas fa-database text-3xl text-pink-400 mb-3 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-sm font-bold text-gray-300 uppercase tracking-widest">Data</h4>
+                    <p class="text-[10px] text-gray-500 mt-2">PostgreSQL, MariaDB, MongoDB</p>
+                </div>
+            </div>
+        </section>
+
         <!-- MilkyWay-HomeLabs Section -->
         <section class="mb-32 relative">
             <div class="absolute inset-0 bg-emerald-500/5 blur-[140px] rounded-full pointer-events-none translate-x-1/4"></div>
@@ -67,69 +147,69 @@
                                 <!-- Tech Stack Categories -->
                                 <div class="flex flex-wrap justify-center items-start gap-8 text-gray-400">
                                     <!-- Environments -->
-                                    <div class="flex flex-col space-y-2 border-r border-slate-700/50 pr-8">
+                                    <div class="flex flex-col space-y-2 border-r border-slate-700/50 pr-4 md:pr-8">
                                         <span class="text-[9px] uppercase tracking-widest text-slate-500 font-bold mb-1">Env</span>
                                         <div class="flex flex-col space-y-1.5">
                                             <div class="flex items-center space-x-2">
-                                                <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
-                                                <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-500/80">Prod</span>
+                                                <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full shrink-0"></span>
+                                                <span class="text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-emerald-500/80">Prod</span>
                                             </div>
                                             <div class="flex items-center space-x-2">
-                                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
-                                                <span class="text-[10px] font-bold uppercase tracking-wider text-blue-500/80">Test</span>
+                                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full shrink-0"></span>
+                                                <span class="text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-blue-500/80">Test</span>
                                             </div>
                                             <div class="flex items-center space-x-2">
-                                                <span class="w-1.5 h-1.5 bg-amber-500 rounded-full"></span>
-                                                <span class="text-[10px] font-bold uppercase tracking-wider text-amber-500/80">Dev</span>
+                                                <span class="w-1.5 h-1.5 bg-amber-500 rounded-full shrink-0"></span>
+                                                <span class="text-[9px] md:text-[10px] font-bold uppercase tracking-wider text-amber-500/80">Dev</span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- Infrastructure & Network -->
-                                    <div class="flex flex-col items-center space-y-2 group border-r border-slate-700/30 pr-8">
+                                    <div class="flex flex-col items-center space-y-2 group border-r border-slate-700/30 pr-4 md:pr-8">
                                         <span class="text-[9px] uppercase tracking-widest text-slate-500 font-bold mb-1">Infrastructure</span>
-                                        <div class="flex items-center space-x-4">
+                                        <div class="flex items-center space-x-3 md:space-x-4">
                                             <div class="flex flex-col items-center group/icon">
-                                                <i class="fab fa-docker text-xl group-hover/icon:text-blue-400 transition-colors" title="Docker"></i>
-                                                <span class="text-[10px] mt-1 uppercase opacity-0 group-hover/icon:opacity-100 transition-opacity">Docker</span>
+                                                <i class="fab fa-docker text-lg md:text-xl group-hover/icon:text-blue-400 transition-colors" title="Docker"></i>
+                                                <span class="text-[8px] md:text-[10px] mt-1 uppercase opacity-0 group-hover/icon:opacity-100 transition-opacity">Docker</span>
                                             </div>
                                             <div class="flex flex-col items-center group/icon">
-                                                <i class="fas fa-route text-xl group-hover/icon:text-blue-400 transition-colors" title="Traefik"></i>
-                                                <span class="text-[10px] mt-1 uppercase opacity-0 group-hover/icon:opacity-100 transition-opacity">Traefik</span>
+                                                <i class="fas fa-route text-lg md:text-xl group-hover/icon:text-blue-400 transition-colors" title="Traefik"></i>
+                                                <span class="text-[8px] md:text-[10px] mt-1 uppercase opacity-0 group-hover/icon:opacity-100 transition-opacity">Traefik</span>
                                             </div>
                                         </div>
                                     </div>
                                     
                                     <!-- Logs & Monitoring -->
-                                    <div class="flex flex-col items-center space-y-2 group border-r border-slate-700/30 pr-8">
+                                    <div class="flex flex-col items-center space-y-2 group border-r border-slate-700/30 pr-4 md:pr-8">
                                         <span class="text-[9px] uppercase tracking-widest text-slate-500 font-bold mb-1">Monitoring</span>
-                                        <div class="flex items-center space-x-4">
+                                        <div class="flex items-center space-x-3 md:space-x-4">
                                             <div class="flex flex-col items-center group/icon">
-                                                <i class="fas fa-chart-line text-xl group-hover/icon:text-orange-400 transition-colors" title="Prometheus"></i>
-                                                <span class="text-[10px] mt-1 uppercase opacity-0 group-hover/icon:opacity-100 transition-opacity">Prometheus</span>
+                                                <i class="fas fa-chart-line text-lg md:text-xl group-hover/icon:text-orange-400 transition-colors" title="Prometheus"></i>
+                                                <span class="text-[8px] md:text-[10px] mt-1 uppercase opacity-0 group-hover/icon:opacity-100 transition-opacity">Prometheus</span>
                                             </div>
                                             <div class="flex flex-col items-center group/icon">
-                                                <i class="fas fa-chart-area text-xl group-hover/icon:text-orange-500 transition-colors" title="Grafana"></i>
-                                                <span class="text-[10px] mt-1 uppercase opacity-0 group-hover/icon:opacity-100 transition-opacity">Grafana</span>
+                                                <i class="fas fa-chart-area text-lg md:text-xl group-hover/icon:text-orange-500 transition-colors" title="Grafana"></i>
+                                                <span class="text-[8px] md:text-[10px] mt-1 uppercase opacity-0 group-hover/icon:opacity-100 transition-opacity">Grafana</span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- Databases -->
-                                    <div class="flex flex-col items-center space-y-2 group border-r border-slate-700/30 pr-8">
+                                    <div class="flex flex-col items-center space-y-2 group border-r border-slate-700/30 pr-4 md:pr-8">
                                         <span class="text-[9px] uppercase tracking-widest text-slate-500 font-bold mb-1">Databases</span>
-                                        <div class="flex items-center space-x-4">
+                                        <div class="flex items-center space-x-3 md:space-x-4">
                                             <div class="flex flex-col items-center group/icon">
-                                                <i class="fas fa-server text-xl group-hover/icon:text-amber-400 transition-colors" title="MariaDB"></i>
-                                                <span class="text-[10px] mt-1 uppercase opacity-0 group-hover/icon:opacity-100 transition-opacity">MariaDB</span>
+                                                <i class="fas fa-server text-lg md:text-xl group-hover/icon:text-amber-400 transition-colors" title="MariaDB"></i>
+                                                <span class="text-[8px] md:text-[10px] mt-1 uppercase opacity-0 group-hover/icon:opacity-100 transition-opacity">MariaDB</span>
                                             </div>
                                             <div class="flex flex-col items-center group/icon">
-                                                <i class="fas fa-database text-xl group-hover/icon:text-blue-500 transition-colors" title="PostgreSQL"></i>
-                                                <span class="text-[10px] mt-1 uppercase opacity-0 group-hover/icon:opacity-100 transition-opacity">Postgres</span>
+                                                <i class="fas fa-database text-lg md:text-xl group-hover/icon:text-blue-500 transition-colors" title="PostgreSQL"></i>
+                                                <span class="text-[8px] md:text-[10px] mt-1 uppercase opacity-0 group-hover/icon:opacity-100 transition-opacity">Postgres</span>
                                             </div>
                                             <div class="flex flex-col items-center group/icon">
-                                                <i class="fas fa-leaf text-xl group-hover/icon:text-emerald-500 transition-colors" title="MongoDB"></i>
-                                                <span class="text-[10px] mt-1 uppercase opacity-0 group-hover/icon:opacity-100 transition-opacity">Mongo</span>
+                                                <i class="fas fa-leaf text-lg md:text-xl group-hover/icon:text-emerald-500 transition-colors" title="MongoDB"></i>
+                                                <span class="text-[8px] md:text-[10px] mt-1 uppercase opacity-0 group-hover/icon:opacity-100 transition-opacity">Mongo</span>
                                             </div>
                                         </div>
                                     </div>
@@ -170,11 +250,12 @@
                             </div>
                             <div class="flex space-x-3 text-gray-500">
                                 <i class="fab fa-docker text-lg hover:text-blue-400 transition-colors" title="Docker Compose"></i>
+                                <i class="fas fa-route text-lg hover:text-blue-400 transition-colors" title="Traefik"></i>
                                 <i class="fas fa-chart-area text-lg hover:text-orange-500 transition-colors" title="Grafana"></i>
                                 <i class="fas fa-chart-line text-lg hover:text-orange-400 transition-colors" title="Prometheus"></i>
                             </div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-1">MilkyWay Test Env</h3>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-2">MilkyWay Test Env</h3>
                         <div class="mb-4">
                             <span class="badge badge-blue">Infrastructure</span>
                         </div>
@@ -199,7 +280,7 @@
                                 <i class="fas fa-database text-lg hover:text-orange-400 transition-colors" title="JDBC"></i>
                             </div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-1">Andromeda Auth Server</h3>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-2">Andromeda Auth Server</h3>
                         <div class="mb-4">
                             <span class="badge badge-blue">Identity Service</span>
                         </div>
@@ -207,10 +288,10 @@
                         
                         <div class="flex items-center space-x-4 mb-8">
                             <span class="flex items-center text-[10px] text-emerald-400 font-bold uppercase tracking-widest">
-                                <i class="fas fa-check-circle mr-1.5"></i> Tests 90%
+                                <i class="fas fa-check-circle mr-1.5"></i> Tests 90.2%
                             </span>
                             <span class="flex items-center text-[10px] text-blue-400 font-bold uppercase tracking-widest">
-                                <i class="fas fa-tag mr-1.5"></i> Stable v2.1
+                                <i class="fas fa-tag mr-1.5"></i> 4.1.0-PUBLIC
                             </span>
                         </div>
                         <div class="flex items-center justify-end mt-auto pt-6 border-t border-slate-700/30">
@@ -246,10 +327,16 @@
                             <div class="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center border border-purple-500/20 group-hover:scale-110 transition-transform duration-500">
                                 <i class="fas fa-archive text-purple-400 text-2xl"></i>
                             </div>
-                            <span class="badge badge-purple">Java</span>
+                            <div class="flex space-x-3 text-gray-500">
+                                <i class="fab fa-java text-lg hover:text-red-400 transition-colors" title="Java"></i>
+                                <i class="fas fa-leaf text-lg hover:text-emerald-400 transition-colors" title="Spring"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors mb-3">Andromeda</h3>
-                        <p class="text-gray-400 mb-6 flex-grow leading-relaxed">Main Andromeda Project repository</p>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors mb-2">Andromeda</h3>
+                        <div class="mb-4">
+                            <span class="badge badge-purple">Core Project</span>
+                        </div>
+                        <p class="text-gray-400 mb-6 flex-grow leading-relaxed">Main Andromeda Project repository. The foundation of the entire ecosystem.</p>
                         <div class="flex items-center justify-end mt-auto pt-6 border-t border-slate-700/30">
                             <a href="https://github.com/szymonderleta/andromeda" class="text-purple-400 hover:text-purple-300 transition-all flex items-center font-bold text-sm tracking-wide group/link">
                                 REPOSITORY <i class="fas fa-arrow-right ml-2 text-xs transform group-hover/link:translate-x-1 transition-transform"></i>
@@ -263,10 +350,17 @@
                             <div class="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center border border-purple-500/20 group-hover:scale-110 transition-transform duration-500">
                                 <i class="fas fa-chess-knight text-purple-400 text-2xl"></i>
                             </div>
-                            <span class="badge badge-purple">Java</span>
+                            <div class="flex space-x-3 text-gray-500">
+                                <i class="fab fa-java text-lg hover:text-red-400 transition-colors" title="Java"></i>
+                                <i class="fas fa-leaf text-lg hover:text-emerald-400 transition-colors" title="Spring Boot"></i>
+                                <i class="fas fa-code text-lg hover:text-blue-400 transition-colors" title="REST API"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors mb-3">Chess REST API</h3>
-                        <p class="text-gray-400 mb-6 flex-grow leading-relaxed">RESTful API for Chess applications, providing game logic and state management.</p>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors mb-2">Chess REST API</h3>
+                        <div class="mb-4">
+                            <span class="badge badge-purple">Game Logic</span>
+                        </div>
+                        <p class="text-gray-400 mb-6 flex-grow leading-relaxed">RESTful API for Chess applications, providing robust game logic and state management.</p>
                         <div class="flex items-center justify-end mt-auto pt-6 border-t border-slate-700/30">
                             <a href="https://github.com/szymonderleta/chess-rest-api-public" class="text-purple-400 hover:text-purple-300 transition-all flex items-center font-bold text-sm tracking-wide group/link">
                                 REPOSITORY <i class="fas fa-arrow-right ml-2 text-xs transform group-hover/link:translate-x-1 transition-transform"></i>
@@ -280,10 +374,16 @@
                             <div class="w-14 h-14 bg-pink-500/10 rounded-2xl flex items-center justify-center border border-pink-500/20 group-hover:scale-110 transition-transform duration-500">
                                 <i class="fas fa-desktop text-pink-400 text-2xl"></i>
                             </div>
-                            <span class="badge badge-pink">JavaScript</span>
+                            <div class="flex space-x-3 text-gray-500">
+                                <i class="fab fa-react text-lg hover:text-cyan-400 transition-colors" title="React"></i>
+                                <i class="fab fa-js text-lg hover:text-yellow-400 transition-colors" title="JavaScript"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white group-hover:text-pink-400 transition-colors mb-3">Nebula Front App</h3>
-                        <p class="text-gray-400 mb-6 flex-grow leading-relaxed">Public repository of Nebula Front App. Modern frontend interface for the Nebula ecosystem.</p>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-pink-400 transition-colors mb-2">Nebula Front App</h3>
+                        <div class="mb-4">
+                            <span class="badge badge-pink">Frontend</span>
+                        </div>
+                        <p class="text-gray-400 mb-6 flex-grow leading-relaxed">Modern frontend interface for the Nebula ecosystem. Built with a focus on UX and performance.</p>
                         <div class="flex items-center justify-end mt-auto pt-6 border-t border-slate-700/30">
                             <a href="https://github.com/szymonderleta/nebula-front-app-public" class="text-pink-400 hover:text-pink-300 transition-all flex items-center font-bold text-sm tracking-wide group/link">
                                 REPOSITORY <i class="fas fa-arrow-right ml-2 text-xs transform group-hover/link:translate-x-1 transition-transform"></i>
@@ -297,10 +397,17 @@
                             <div class="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center border border-purple-500/20 group-hover:scale-110 transition-transform duration-500">
                                 <i class="fas fa-server text-purple-400 text-2xl"></i>
                             </div>
-                            <span class="badge badge-purple">Java</span>
+                            <div class="flex space-x-3 text-gray-500">
+                                <i class="fab fa-java text-lg hover:text-red-400 transition-colors" title="Java"></i>
+                                <i class="fas fa-leaf text-lg hover:text-emerald-400 transition-colors" title="Spring"></i>
+                                <i class="fas fa-database text-lg hover:text-blue-500 transition-colors" title="SQL"></i>
+                            </div>
                         </div>
-                        <h3 class="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors mb-3">Nebula REST API</h3>
-                        <p class="text-gray-400 mb-6 flex-grow leading-relaxed">Backend services for the Nebula project, handling data persistence and business logic.</p>
+                        <h3 class="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors mb-2">Nebula REST API</h3>
+                        <div class="mb-4">
+                            <span class="badge badge-purple">Backend</span>
+                        </div>
+                        <p class="text-gray-400 mb-6 flex-grow leading-relaxed">Backend services for the Nebula project, handling complex data persistence and business logic.</p>
                         <div class="flex items-center justify-end mt-auto pt-6 border-t border-slate-700/30">
                             <a href="https://github.com/szymonderleta/nebula-rest-api-public" class="text-purple-400 hover:text-purple-300 transition-all flex items-center font-bold text-sm tracking-wide group/link">
                                 REPOSITORY <i class="fas fa-arrow-right ml-2 text-xs transform group-hover/link:translate-x-1 transition-transform"></i>
@@ -315,20 +422,45 @@
     <footer class="py-12 border-t border-slate-800/50 text-center">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-lg flex items-center justify-center text-white font-bold">S</div>
-                    <span class="text-gray-400 font-medium">Szymon Derleta</span>
-                </div>
-                <p class="text-sm text-gray-500">
-                    &copy; 2026 MilkyWay-HomeLabs. Built with <span class="text-blue-400 font-medium">Tailwind CSS</span>.
+                <p class="text-sm text-gray-500 order-2 md:order-1">
+                    &copy; 2026 Szymon Derleta <span class="mx-3 text-slate-800">|</span> <span class="text-[10px] uppercase tracking-widest font-bold text-gray-600">derleta.org</span>
                 </p>
-                <div class="flex space-x-6 text-gray-500">
-                    <a href="https://github.com/szymonderleta" class="hover:text-white transition-colors"><i class="fab fa-github"></i></a>
-                    <a href="mailto:szymonderleta@gmail.com" class="hover:text-white transition-colors"><i class="fas fa-envelope"></i></a>
+                
+                <div class="flex space-x-6 text-gray-500 order-1 md:order-2">
+                    <a href="https://github.com/szymonderleta" class="hover:text-white transition-all transform hover:scale-110" aria-label="GitHub" title="GitHub">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/szymon-derleta-3b7117371/" class="hover:text-blue-400 transition-all transform hover:scale-110" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="mailto:szymonderleta@gmail.com" class="hover:text-white transition-all transform hover:scale-110" aria-label="Email" title="Email">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
                 </div>
             </div>
-            <p class="mt-4 text-[10px] text-gray-600 uppercase tracking-widest font-bold">derleta.org</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 p-4 bg-slate-800/80 backdrop-blur-md border border-white/10 rounded-full text-blue-400 shadow-2xl opacity-0 translate-y-10 transition-all duration-500 hover:bg-slate-700 hover:text-white group z-50 pointer-events-none" aria-label="Back to top">
+        <i class="fas fa-chevron-up text-lg group-hover:-translate-y-1 transition-transform"></i>
+    </button>
+
+    <script>
+        // Back to Top functionality
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTopBtn.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+                backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+                backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
