@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-[#0f172a] text-slate-200 font-sans antialiased">
-    <header class="py-24 px-4 relative overflow-hidden">
+    <header class="py-16 px-4 relative overflow-hidden">
         <div class="absolute inset-0 bg-blue-500/5 blur-[140px] rounded-full -translate-y-1/2 pointer-events-none"></div>
         <div class="max-w-5xl mx-auto relative z-10 animate-reveal">
             <div class="flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
@@ -41,7 +41,7 @@
                     <img src="img.png" alt="Szymon Derleta" class="relative w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-slate-800 shadow-2xl object-cover">
                 </div>
                 <div class="flex-1">
-                    <h1 class="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400 mb-6">
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400 mb-6">
                         Szymon Derleta
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-300 font-light leading-relaxed mb-8">
@@ -76,12 +76,51 @@
 
     <main class="max-w-6xl mx-auto px-4 pb-20">
 
+        <!-- Skills Section -->
+        <section class="mb-20 relative animate-reveal stagger-1">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-slate-800/30 rounded-2xl border border-white/5 backdrop-blur-sm">
+                    <h3 class="text-lg font-bold text-blue-400 mb-4 flex items-center">
+                        <i class="fas fa-code-branch mr-3"></i> Backend Development
+                    </h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="fab fa-java text-red-400 w-6"></i> Java 17/21 (Core)</li>
+                        <li class="flex items-center"><i class="fas fa-leaf text-emerald-500 w-6"></i> Spring Boot & Security</li>
+                        <li class="flex items-center"><i class="fas fa-database text-amber-500 w-6"></i> Hibernate & SQL</li>
+                        <li class="flex items-center"><i class="fas fa-vial text-blue-400 w-6"></i> JUnit 5 & Mockito</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-slate-800/30 rounded-2xl border border-white/5 backdrop-blur-sm">
+                    <h3 class="text-lg font-bold text-emerald-400 mb-4 flex items-center">
+                        <i class="fas fa-server mr-3"></i> Infrastructure & DevOps
+                    </h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="fab fa-docker text-blue-400 w-6"></i> Docker & Compose</li>
+                        <li class="flex items-center"><i class="fas fa-terminal text-gray-300 w-6"></i> Linux Administration</li>
+                        <li class="flex items-center"><i class="fas fa-project-diagram text-blue-300 w-6"></i> CI/CD Fundamentals</li>
+                        <li class="flex items-center"><i class="fas fa-chart-line text-orange-400 w-6"></i> Prometheus & Grafana</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-slate-800/30 rounded-2xl border border-white/5 backdrop-blur-sm">
+                    <h3 class="text-lg font-bold text-purple-400 mb-4 flex items-center">
+                        <i class="fas fa-tools mr-3"></i> Other Technologies
+                    </h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="fab fa-git-alt text-orange-600 w-6"></i> Git Version Control</li>
+                        <li class="flex items-center"><i class="fab fa-react text-cyan-400 w-6"></i> React Basics</li>
+                        <li class="flex items-center"><i class="fas fa-cloud text-blue-500 w-6"></i> Microservices Architecture</li>
+                        <li class="flex items-center"><i class="fas fa-book text-gray-400 w-6"></i> Clean Code & SOLID</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <!-- MilkyWay-HomeLabs Section -->
-        <section class="mb-32 relative">
+        <section class="mb-20 relative">
             <div class="absolute inset-0 bg-emerald-500/5 blur-[140px] rounded-full pointer-events-none translate-x-1/4"></div>
             <div class="relative z-10 animate-reveal stagger-1">
                 <div class="text-center mb-12">
-                    <h2 class="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
+                    <h2 class="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
                         MilkyWay-HomeLabs
                     </h2>
                         <p class="text-gray-400 max-w-3xl mx-auto mb-6 text-lg leading-relaxed">
@@ -194,13 +233,13 @@
                     <div class="col-span-1 md:col-span-2 lg:col-span-3">
                         <div class="relative p-1 bg-gradient-to-r from-blue-500/10 via-emerald-500/10 to-blue-500/10 rounded-[2.5rem] mb-8">
                             <div class="bg-slate-900/60 backdrop-blur-3xl p-8 rounded-[2.3rem] border border-white/5">
-                                <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
+                                <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-4">
                                     <div class="flex items-center space-x-5">
-                                        <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center border border-blue-500/30">
-                                            <i class="fas fa-microchip text-blue-400 text-3xl"></i>
+                                        <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center border border-blue-500/30">
+                                            <i class="fas fa-microchip text-blue-400 text-2xl"></i>
                                         </div>
                                         <div>
-                                            <h3 class="text-3xl font-bold text-white">Core Services</h3>
+                                            <h3 class="text-2xl font-bold text-white">Core Services</h3>
                                             <p class="text-blue-400 font-medium tracking-wide uppercase text-xs mt-1">Foundation Layer</p>
                                         </div>
                                     </div>
@@ -278,13 +317,13 @@
                     <div class="col-span-1 md:col-span-2 lg:col-span-3">
                         <div class="relative p-1 bg-gradient-to-r from-blue-500/10 via-emerald-500/10 to-blue-500/10 rounded-[2.5rem] mb-4">
                             <div class="bg-slate-900/60 backdrop-blur-3xl p-8 rounded-[2.3rem] border border-white/5">
-                                <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
+                                <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-4">
                                     <div class="flex items-center space-x-5">
-                                        <div class="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center border border-blue-500/30">
-                                            <i class="fas fa-layer-group text-blue-400 text-3xl"></i>
+                                        <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center border border-blue-500/30">
+                                            <i class="fas fa-layer-group text-blue-400 text-2xl"></i>
                                         </div>
                                         <div>
-                                            <h3 class="text-3xl font-bold text-white">Nebula Full-Stack</h3>
+                                            <h3 class="text-2xl font-bold text-white">Nebula Full-Stack</h3>
                                             <p class="text-blue-400 font-medium tracking-wide uppercase text-xs mt-1">Integrated Ecosystem</p>
                                         </div>
                                     </div>
@@ -351,19 +390,21 @@
         </section>
 
         <!-- Andromeda Archives Section -->
-        <section class="relative mb-32">
+        <section class="relative mb-20">
             <div class="absolute inset-0 bg-purple-500/5 blur-[140px] rounded-full pointer-events-none -translate-x-1/4"></div>
             <div class="relative z-10 animate-reveal">
-                <div class="text-center mb-12 border-t border-slate-800 pt-20">
-                    <h2 class="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+                <div class="text-center mb-8 border-t border-slate-800 pt-16">
+                    <h2 class="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
                         Andromeda Archives
                     </h2>
                     <p class="text-gray-400 max-w-2xl mx-auto mb-6 text-lg">
                         Historical and personal projects maintained under my primary profile.
                     </p>
-                    <a href="https://github.com/szymonderleta/" class="px-6 py-2 bg-slate-800 hover:bg-slate-700 border border-purple-500/30 rounded-full inline-flex items-center text-purple-400 transition-all">
-                        View szymonderleta Profile <i class="fab fa-github ml-2"></i>
-                    </a>
+                    <div class="flex justify-center gap-4">
+                        <a href="https://github.com/szymonderleta/" class="px-6 py-2 bg-slate-800 hover:bg-slate-700 border border-purple-500/30 rounded-full inline-flex items-center text-purple-400 transition-all" aria-label="View GitHub Profile">
+                            View szymonderleta Profile <i class="fab fa-github ml-2"></i>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
