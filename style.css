@@ -11,6 +11,7 @@
     --blue: #60a5fa;
     --emerald: #34d399;
     --purple: #c084fc;
+    --amber: #fbbf24;
     --accent: var(--blue);
 }
 
@@ -205,6 +206,7 @@ body {
 .accent-blue { --accent: var(--blue); }
 .accent-emerald { --accent: var(--emerald); }
 .accent-purple { --accent: var(--purple); }
+.accent-amber { --accent: var(--amber); }
 
 .icon-tile {
     display: inline-flex;

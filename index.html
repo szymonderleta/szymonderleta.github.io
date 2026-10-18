@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Szymon Derleta - Junior Java Developer & Infrastructure Enthusiast</title>
+    <title>Szymon Derleta - Java Developer & Infrastructure Enthusiast</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Portfolio of Szymon Derleta - Aspiring Junior Java Developer & Infrastructure Enthusiast specializing in Spring, Docker, and Monitoring. Creator of MilkyWay-HomeLabs ecosystem.">
-    <meta name="keywords" content="Szymon Derleta, Junior Java Developer, Java, Spring, Infrastructure, Docker, Monitoring, Prometheus, Grafana, MilkyWay-HomeLabs">
+    <meta name="description" content="Portfolio of Szymon Derleta - Java Developer & Infrastructure Enthusiast specializing in Spring, Docker, and Monitoring. Creator of MilkyWay-HomeLabs ecosystem.">
+    <meta name="keywords" content="Szymon Derleta, Java Developer, Java, Spring, Infrastructure, Docker, Monitoring, Prometheus, Grafana, MilkyWay-HomeLabs">
     <meta name="author" content="Szymon Derleta">
     <meta name="theme-color" content="#0b1120">
     <link rel="canonical" href="https://www.derleta.org/">
@@ -76,7 +76,7 @@
                     Szymon <span class="text-gradient">Derleta</span>
                 </h1>
                 <p class="reveal text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-2xl mx-auto md:mx-0 mb-8">
-                    Aspiring <span class="text-blue-400 font-medium">Junior Java Developer</span> focused on
+                    <span class="text-blue-400 font-medium">Java Developer</span> focused on
                     <span class="text-blue-400 font-medium">Spring ecosystems</span>,
                     <span class="text-emerald-400 font-medium">home-lab infrastructure</span> and
                     <span class="text-emerald-400 font-medium">system monitoring</span>.
@@ -328,7 +328,7 @@
             </div>
 
             <!-- Hacman -->
-            <div>
+            <div class="mb-16">
                 <div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
                     <div class="flex items-center gap-4">
                         <span class="icon-tile accent-purple"><i class="fas fa-gamepad text-lg"></i></span>
@@ -409,6 +409,47 @@
                     </article>
                 </div>
             </div>
+
+            <!-- Chess -->
+            <div>
+                <div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+                    <div class="flex items-center gap-4">
+                        <span class="icon-tile accent-amber"><i class="fas fa-chess text-lg"></i></span>
+                        <div>
+                            <p class="font-mono text-[11px] uppercase tracking-widest text-amber-400">Tournaments + Rankings</p>
+                            <h3 class="text-2xl font-bold text-white">Chess Platform</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-sm max-w-md md:text-right leading-relaxed">
+                        Chess services for the lab: seasons, tournaments, games and player rankings, served by a Spring Boot REST API.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 gap-6">
+                    <article class="card accent-amber reveal">
+                        <div class="flex items-start justify-between gap-4 mb-5">
+                            <span class="icon-tile"><i class="fas fa-chess-knight text-xl"></i></span>
+                            <span class="badge">Backend</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Chess REST API</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Backend for chess data and workflows: seasons, tournaments, games, players, titles and rankings. HATEOAS REST API with Swagger docs, Prometheus metrics and a Jenkins pipeline.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="tech">Java 21</span>
+                            <span class="tech">Spring Boot 3.3</span>
+                            <span class="tech">MariaDB</span>
+                            <span class="tech">Spring HATEOAS</span>
+                            <span class="tech">Jenkins</span>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
+                            <div class="flex gap-4">
+                                <span class="meta meta-ok"><i class="fas fa-circle-check"></i>Lines 99.6%</span>
+                                <span class="meta meta-ver"><i class="fas fa-tag"></i>3.0.0</span>
+                            </div>
+                            <a href="https://github.com/MilkyWay-HomeLabs/chess-rest-api-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <!-- Andromeda Archives -->
@@ -424,7 +465,7 @@
                 </a>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <article class="card accent-purple reveal">
                     <div class="flex items-start justify-between gap-4 mb-5">
                         <span class="icon-tile"><i class="fas fa-box-archive text-xl"></i></span>
@@ -443,28 +484,7 @@
                     </div>
                 </article>
 
-                <article class="card accent-purple reveal">
-                    <div class="flex items-start justify-between gap-4 mb-5">
-                        <span class="icon-tile"><i class="fas fa-chess-knight text-xl"></i></span>
-                        <span class="badge">Game Logic</span>
-                    </div>
-                    <h4 class="text-xl font-bold text-white mb-2">Chess REST API</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Backend for chess data and workflows: seasons, tournaments, games, players, titles and rankings. HATEOAS REST API with Swagger docs, Prometheus metrics and a Jenkins pipeline.</p>
-                    <div class="flex flex-wrap gap-2 mb-5">
-                        <span class="tech">Java</span>
-                        <span class="tech">Spring Boot 3.3</span>
-                        <span class="tech">MariaDB</span>
-                    </div>
-                    <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
-                        <div class="flex gap-4">
-                            <span class="meta meta-ok"><i class="fas fa-circle-check"></i>Lines 99.6%</span>
-                            <span class="meta meta-ver"><i class="fas fa-tag"></i>3.0.0</span>
-                        </div>
-                        <a href="https://github.com/MilkyWay-HomeLabs/chess-rest-api-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
-                    </div>
-                </article>
-
-                <article class="card accent-emerald reveal md:col-span-2 lg:col-span-1">
+                <article class="card accent-emerald reveal">
                     <div class="flex items-start justify-between gap-4 mb-5">
                         <span class="icon-tile"><i class="fab fa-raspberry-pi text-xl"></i></span>
                         <span class="badge">Hardware</span>
