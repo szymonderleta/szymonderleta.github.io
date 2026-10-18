@@ -16,14 +16,14 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.derleta.org/">
     <meta property="og:title" content="Szymon Derleta - Projects Portfolio">
-    <meta property="og:description" content="Explore the projects of Szymon Derleta, including MilkyWay-HomeLabs ecosystem and Andromeda Auth Server.">
+    <meta property="og:description" content="Explore the projects of Szymon Derleta: the MilkyWay-HomeLabs ecosystem with Andromeda Auth Server, Nebula and the Hacman game platform.">
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/257604232?s=400">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.derleta.org/">
     <meta property="twitter:title" content="Szymon Derleta - Projects Portfolio">
-    <meta property="twitter:description" content="Explore the projects of Szymon Derleta, including MilkyWay-HomeLabs ecosystem and Andromeda Auth Server.">
+    <meta property="twitter:description" content="Explore the projects of Szymon Derleta: the MilkyWay-HomeLabs ecosystem with Andromeda Auth Server, Nebula and the Hacman game platform.">
     <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/257604232?s=400">
 
     <!-- Favicon -->
@@ -134,7 +134,7 @@
                     <ul class="space-y-1">
                         <li class="skill-item"><i class="fab fa-java text-red-400"></i> Java 17/21 (Core)</li>
                         <li class="skill-item"><i class="fas fa-leaf text-emerald-400"></i> Spring Boot & Security</li>
-                        <li class="skill-item"><i class="fas fa-database text-amber-400"></i> Hibernate & SQL</li>
+                        <li class="skill-item"><i class="fas fa-database text-amber-400"></i> Hibernate, MariaDB & PostgreSQL</li>
                         <li class="skill-item"><i class="fas fa-vial text-blue-400"></i> JUnit 5 & Mockito</li>
                     </ul>
                 </div>
@@ -147,7 +147,7 @@
                     <ul class="space-y-1">
                         <li class="skill-item"><i class="fab fa-docker text-blue-400"></i> Docker & Compose</li>
                         <li class="skill-item"><i class="fas fa-terminal text-slate-300"></i> Linux Administration</li>
-                        <li class="skill-item"><i class="fas fa-diagram-project text-sky-300"></i> CI/CD Fundamentals</li>
+                        <li class="skill-item"><i class="fas fa-diagram-project text-sky-300"></i> CI/CD (GitHub Actions, Jenkins)</li>
                         <li class="skill-item"><i class="fas fa-chart-line text-orange-400"></i> Prometheus & Grafana</li>
                     </ul>
                 </div>
@@ -158,7 +158,7 @@
                         <h3 class="text-lg font-bold text-white">Other Technologies</h3>
                     </div>
                     <ul class="space-y-1">
-                        <li class="skill-item"><i class="fab fa-git-alt text-orange-500"></i> Git Version Control</li>
+                        <li class="skill-item"><i class="fab fa-python text-yellow-300"></i> Python & Raspberry Pi</li>
                         <li class="skill-item"><i class="fab fa-react text-cyan-400"></i> React & TypeScript</li>
                         <li class="skill-item"><i class="fab fa-microsoft text-blue-500"></i> .NET & Blazor</li>
                         <li class="skill-item"><i class="fas fa-book text-slate-400"></i> Clean Code & SOLID</li>
@@ -194,6 +194,7 @@
                 <div class="flex flex-wrap gap-2">
                     <span class="tech"><i class="fab fa-docker text-blue-400"></i>Docker</span>
                     <span class="tech"><i class="fas fa-route text-sky-300"></i>Traefik</span>
+                    <span class="tech"><i class="fab fa-github text-slate-300"></i>GitHub Actions</span>
                     <span class="tech"><i class="fas fa-chart-line text-orange-400"></i>Prometheus</span>
                     <span class="tech"><i class="fas fa-chart-area text-orange-500"></i>Grafana</span>
                     <span class="tech"><i class="fas fa-database text-amber-400"></i>MariaDB</span>
@@ -226,15 +227,16 @@
                             <span class="badge">Infrastructure</span>
                         </div>
                         <h4 class="text-xl font-bold text-white mb-2">MilkyWay Test Env</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">A pre-configured test environment using Docker Compose. Features automated service discovery via Traefik and comprehensive monitoring.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Pre-configured Docker Compose test environment for the lab services, with automated service discovery via Traefik and Prometheus + Grafana monitoring.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="tech">Docker Compose</span>
                             <span class="tech">Traefik</span>
                             <span class="tech">Prometheus</span>
                             <span class="tech">Grafana</span>
                         </div>
-                        <div class="flex items-center justify-end pt-4 border-t border-white/5">
-                            <a href="https://github.com/MilkyWay-HomeLabs/milkyway-test-env" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                            <span class="meta"><i class="fas fa-flask"></i>Test environment</span>
+                            <span class="meta" title="This repository is private"><i class="fas fa-lock"></i>Private repository</span>
                         </div>
                     </article>
 
@@ -244,16 +246,17 @@
                             <span class="badge">Identity Service</span>
                         </div>
                         <h4 class="text-xl font-bold text-white mb-2">Andromeda Auth Server</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">JWT authorization service with token lifecycle management, data encryption and email services. Secures the entire ecosystem.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">JWT authorization server for the whole ecosystem: refresh token rotation with incident tracking, AES-encrypted tokens at rest, account e-mails (activation, password reset) and Micrometer metrics.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="tech">Java 21</span>
                             <span class="tech">Spring Boot 3.5</span>
+                            <span class="tech">JWT</span>
                             <span class="tech">MariaDB</span>
                         </div>
                         <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
                             <div class="flex gap-4">
                                 <span class="meta meta-ok"><i class="fas fa-circle-check"></i>Tests 92.1%</span>
-                                <span class="meta meta-ver"><i class="fas fa-tag"></i>5.1.0</span>
+                                <span class="meta meta-ver"><i class="fas fa-tag"></i>5.5.0</span>
                             </div>
                             <a href="https://github.com/MilkyWay-HomeLabs/andromeda-authorization-server-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
                         </div>
@@ -272,7 +275,7 @@
                         </div>
                     </div>
                     <p class="text-slate-400 text-sm max-w-md md:text-right leading-relaxed">
-                        A full-stack solution for user profile management and account lifecycle: a Java backend paired with a modern React frontend.
+                        The central user hub of the lab: account lifecycle and profile management, plus the gateway other apps use to sign in through Andromeda.
                     </p>
                 </div>
 
@@ -280,19 +283,21 @@
                     <article class="card accent-emerald reveal">
                         <div class="flex items-start justify-between gap-4 mb-5">
                             <span class="icon-tile"><i class="fas fa-server text-xl"></i></span>
-                            <span class="badge">Backend</span>
+                            <span class="badge">Backend · Public Preview</span>
                         </div>
                         <h4 class="text-xl font-bold text-white mb-2">Nebula REST API</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Hexagonal architecture Spring Boot API with Hibernate ORM. Manages user accounts, achievements, profiles and integrations with external services.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Hexagonal-architecture Spring Boot API for accounts, tokens, profiles, achievements, games and images. JWT + CSRF protection, OpenAPI docs and custom Prometheus business metrics.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="tech">Java 21</span>
                             <span class="tech">Spring Boot 3.5</span>
                             <span class="tech">Hibernate ORM</span>
+                            <span class="tech">MariaDB</span>
+                            <span class="tech">OpenAPI</span>
                         </div>
                         <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
                             <div class="flex gap-4">
                                 <span class="meta meta-ok"><i class="fas fa-circle-check"></i>Tests 91.9%</span>
-                                <span class="meta meta-ver"><i class="fas fa-tag"></i>5.4.0-PUBLIC-PREVIEW</span>
+                                <span class="meta meta-ver"><i class="fas fa-tag"></i>5.5.0</span>
                             </div>
                             <a href="https://github.com/MilkyWay-HomeLabs/nebula-rest-api-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
                         </div>
@@ -301,20 +306,22 @@
                     <article class="card accent-emerald reveal">
                         <div class="flex items-start justify-between gap-4 mb-5">
                             <span class="icon-tile"><i class="fas fa-desktop text-xl"></i></span>
-                            <span class="badge">Frontend</span>
+                            <span class="badge">Frontend · Public Beta</span>
                         </div>
                         <h4 class="text-xl font-bold text-white mb-2">Nebula Home Frontend</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">React 19 single-page application for user profile management. Features avatar uploads, password changes, security settings and profile customization.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">React 19 single-page app for the Nebula user hub: registration and onboarding, profile editing, avatar uploads and security settings, with JWT cookie sessions and CSRF protection.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="tech">React 19</span>
-                            <span class="tech">Vite</span>
+                            <span class="tech">Vite 8</span>
+                            <span class="tech">Vitest</span>
+                            <span class="tech">Playwright</span>
                         </div>
                         <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
                             <div class="flex gap-4">
                                 <span class="meta meta-ok"><i class="fas fa-circle-check"></i>Tests 89.81%</span>
                                 <span class="meta meta-ver"><i class="fas fa-tag"></i>4.1.0</span>
                             </div>
-                            <a href="https://github.com/MilkyWay-HomeLabs/nebula-home" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
+                            <a href="https://github.com/MilkyWay-HomeLabs/nebula-front-app-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
                         </div>
                     </article>
                 </div>
@@ -331,7 +338,7 @@
                         </div>
                     </div>
                     <p class="text-slate-400 text-sm max-w-md md:text-right leading-relaxed">
-                        A platform built with .NET 10: a full-stack user panel for galleries and leaderboards, plus an interactive maze game client.
+                        A .NET 10 user panel for photo galleries, unlockable content, best times and leaderboards, plus a React maze game. Players sign in through Nebula and Andromeda.
                     </p>
                 </div>
 
@@ -342,15 +349,17 @@
                             <span class="badge">User Panel · API</span>
                         </div>
                         <h4 class="text-lg font-bold text-white mb-2">Backend API</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">DDD bounded contexts. Manages galleries, user progress, scores and level templates via REST.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">ASP.NET Core Web API organised by DDD bounded contexts: gallery catalog, player progress, scoring and maze level templates. PostgreSQL via hand-written SQL.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="tech">.NET 10</span>
                             <span class="tech">ASP.NET Core</span>
+                            <span class="tech">PostgreSQL</span>
+                            <span class="tech">Testcontainers</span>
                         </div>
                         <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
                             <div class="flex gap-4">
-                                <span class="meta meta-ok"><i class="fas fa-circle-check"></i>143 tests</span>
-                                <span class="meta meta-ver"><i class="fas fa-tag"></i>2.1.0</span>
+                                <span class="meta meta-ok"><i class="fas fa-circle-check"></i>311 tests</span>
+                                <span class="meta meta-ver"><i class="fas fa-tag"></i>2.3.0</span>
                             </div>
                             <a href="https://github.com/MilkyWay-HomeLabs/hacman-app-public/tree/main/hacman-app-back" class="link-arrow">Docs <i class="fas fa-arrow-right text-xs"></i></a>
                         </div>
@@ -362,15 +371,17 @@
                             <span class="badge">User Panel · UI</span>
                         </div>
                         <h4 class="text-lg font-bold text-white mb-2">Frontend UI</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Blazor Server interactive components. Gallery browsing, progress tracking and score leaderboards.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Server-rendered Blazor user panel: gallery browsing with a detail lightbox, progress tracking and score rankings, using Nebula cookie authentication.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="tech">.NET 10</span>
                             <span class="tech">Blazor Server</span>
+                            <span class="tech">bUnit</span>
+                            <span class="tech">Playwright</span>
                         </div>
                         <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
                             <div class="flex gap-4">
-                                <span class="meta meta-ok"><i class="fas fa-circle-check"></i>99 tests</span>
-                                <span class="meta meta-ver"><i class="fas fa-tag"></i>2.0.0</span>
+                                <span class="meta meta-ok"><i class="fas fa-circle-check"></i>186 tests</span>
+                                <span class="meta meta-ver"><i class="fas fa-tag"></i>2.2.0</span>
                             </div>
                             <a href="https://github.com/MilkyWay-HomeLabs/hacman-app-public" class="link-arrow">Platform <i class="fas fa-arrow-right text-xs"></i></a>
                         </div>
@@ -382,16 +393,16 @@
                             <span class="badge">Game Client</span>
                         </div>
                         <h4 class="text-lg font-bold text-white mb-2">Interactive Maze Game</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Web-based maze game with enemy AI, power-ups/debuffs and score reporting. Launched from gallery context with dynamic difficulty levels.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Browser maze game: clear the dots, avoid enemies and use buffs/debuffs. Launched from a gallery, it loads levels from the Hacman API, lets you pick a difficulty and reports your score back.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
                             <span class="tech">React 19</span>
-                            <span class="tech">TypeScript</span>
-                            <span class="tech">Vite</span>
+                            <span class="tech">TypeScript 5.9</span>
+                            <span class="tech">Vite 8</span>
                         </div>
                         <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
                             <div class="flex gap-4">
                                 <span class="meta meta-ok"><i class="fas fa-circle-check"></i>Coverage ≥80%</span>
-                                <span class="meta meta-ver"><i class="fas fa-tag"></i>1.2.2</span>
+                                <span class="meta meta-ver"><i class="fas fa-tag"></i>1.4.1</span>
                             </div>
                             <a href="https://github.com/MilkyWay-HomeLabs/hacman-game-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
                         </div>
@@ -405,25 +416,27 @@
             <div class="reveal flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
                 <div>
                     <p class="section-eyebrow mb-2" style="--accent: var(--purple)">03 / Archive</p>
-                    <h2 class="section-title">Andromeda Archives</h2>
-                    <p class="text-slate-400 max-w-2xl mt-3 leading-relaxed">Historical and personal projects maintained under my primary profile.</p>
+                    <h2 class="section-title">Personal Projects & Archive</h2>
+                    <p class="text-slate-400 max-w-2xl mt-3 leading-relaxed">Side projects and earlier work, including the Raspberry Pi platform where the ecosystem started.</p>
                 </div>
                 <a href="https://github.com/szymonderleta/" class="btn btn-ghost self-start lg:self-auto shrink-0">
                     <i class="fab fa-github"></i> szymonderleta
                 </a>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <article class="card accent-purple reveal">
                     <div class="flex items-start justify-between gap-4 mb-5">
                         <span class="icon-tile"><i class="fas fa-box-archive text-xl"></i></span>
-                        <span class="badge">Core Project</span>
+                        <span class="badge">Archive</span>
                     </div>
                     <h4 class="text-xl font-bold text-white mb-2">Andromeda</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Main Andromeda Project repository. The foundation of the entire ecosystem.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">The original microservices platform: a local, browser-based game service on a Raspberry Pi 5 (Debian 12, ARM). Java services on Tomcat 10, React frontends and MariaDB.</p>
                     <div class="flex flex-wrap gap-2 mb-5">
-                        <span class="tech">Java</span>
+                        <span class="tech">Java 21</span>
                         <span class="tech">Spring</span>
+                        <span class="tech">React</span>
+                        <span class="tech">Raspberry Pi 5</span>
                     </div>
                     <div class="flex items-center justify-end pt-4 border-t border-white/5">
                         <a href="https://github.com/szymonderleta/andromeda" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
@@ -436,14 +449,35 @@
                         <span class="badge">Game Logic</span>
                     </div>
                     <h4 class="text-xl font-bold text-white mb-2">Chess REST API</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Chess engine implementation with a REST API, featuring move validation and state management for web-based games.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Backend for chess data and workflows: seasons, tournaments, games, players, titles and rankings. HATEOAS REST API with Swagger docs, Prometheus metrics and a Jenkins pipeline.</p>
                     <div class="flex flex-wrap gap-2 mb-5">
                         <span class="tech">Java</span>
-                        <span class="tech">Spring Boot</span>
-                        <span class="tech">REST API</span>
+                        <span class="tech">Spring Boot 3.3</span>
+                        <span class="tech">MariaDB</span>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
+                        <div class="flex gap-4">
+                            <span class="meta meta-ok"><i class="fas fa-circle-check"></i>Lines 99.6%</span>
+                            <span class="meta meta-ver"><i class="fas fa-tag"></i>3.0.0</span>
+                        </div>
+                        <a href="https://github.com/MilkyWay-HomeLabs/chess-rest-api-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </article>
+
+                <article class="card accent-emerald reveal md:col-span-2 lg:col-span-1">
+                    <div class="flex items-start justify-between gap-4 mb-5">
+                        <span class="icon-tile"><i class="fab fa-raspberry-pi text-xl"></i></span>
+                        <span class="badge">Hardware</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-2">GitHub Activity e-Paper</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">GitHub contribution stats on a Waveshare 2.13" e-paper HAT driven by a Raspberry Pi Zero 2 WH. Six rotating views (calendar tiles, weekly activity, yearly pace, streaks), refreshed by systemd timers.</p>
+                    <div class="flex flex-wrap gap-2 mb-5">
+                        <span class="tech">Python</span>
+                        <span class="tech">Raspberry Pi</span>
+                        <span class="tech">systemd</span>
                     </div>
                     <div class="flex items-center justify-end pt-4 border-t border-white/5">
-                        <a href="https://github.com/szymonderleta/chess-rest-api-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
+                        <a href="https://github.com/szymonderleta/github-activity-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
                     </div>
                 </article>
             </div>
