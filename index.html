@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szymon Derleta - Junior Java Developer & Infrastructure Enthusiast</title>
-    
+
     <!-- SEO Meta Tags -->
     <meta name="description" content="Portfolio of Szymon Derleta - Aspiring Junior Java Developer & Infrastructure Enthusiast specializing in Spring, Docker, and Monitoring. Creator of MilkyWay-HomeLabs ecosystem.">
     <meta name="keywords" content="Szymon Derleta, Junior Java Developer, Java, Spring, Infrastructure, Docker, Monitoring, Prometheus, Grafana, MilkyWay-HomeLabs">
     <meta name="author" content="Szymon Derleta">
-    
+    <meta name="theme-color" content="#0b1120">
+    <link rel="canonical" href="https://www.derleta.org/">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://derleta.org/">
+    <meta property="og:url" content="https://www.derleta.org/">
     <meta property="og:title" content="Szymon Derleta - Projects Portfolio">
     <meta property="og:description" content="Explore the projects of Szymon Derleta, including MilkyWay-HomeLabs ecosystem and Andromeda Auth Server.">
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/257604232?s=400">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://derleta.org/">
+    <meta property="twitter:url" content="https://www.derleta.org/">
     <meta property="twitter:title" content="Szymon Derleta - Projects Portfolio">
     <meta property="twitter:description" content="Explore the projects of Szymon Derleta, including MilkyWay-HomeLabs ecosystem and Andromeda Auth Server.">
     <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/257604232?s=400">
@@ -27,599 +29,516 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/257604232?s=32">
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.remove('no-js');</script>
 </head>
-<body class="bg-[#0f172a] text-slate-200 font-sans antialiased">
-    <header class="py-8 px-4 relative overflow-hidden">
-        <div class="absolute inset-0 bg-blue-500/5 blur-[140px] rounded-full -translate-y-1/2 pointer-events-none"></div>
-        <div class="max-w-5xl mx-auto relative z-10 animate-reveal">
-            <div class="p-6 md:p-8 bg-slate-800/20 backdrop-blur-md rounded-[2.5rem] border border-white/5 shadow-2xl">
-                <div class="flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
-                    <div class="relative group">
-                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-emerald-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-500"></div>
-                        <img src="img.png" alt="Szymon Derleta" class="relative w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-slate-800 shadow-2xl object-cover">
+<body class="antialiased">
+    <div class="bg-decor" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav id="nav" class="nav-blur fixed top-0 inset-x-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#top" class="flex items-center gap-3 group" aria-label="Back to top">
+                <span class="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-emerald-500 flex items-center justify-center font-mono font-bold text-sm text-slate-950">SD</span>
+                <span class="hidden sm:block font-semibold text-white group-hover:text-blue-300 transition-colors">Szymon Derleta</span>
+            </a>
+            <div class="flex items-center gap-1">
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#archive" class="nav-link">Archive</a>
+                <a href="#contact" class="nav-link hidden sm:inline-block">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="top" class="pt-32 pb-20 md:pt-40 md:pb-28 px-4">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-[auto_1fr] gap-10 md:gap-16 items-center">
+            <div class="reveal mx-auto md:mx-0">
+                <div class="avatar-ring">
+                    <picture>
+                        <source srcset="avatar.webp" type="image/webp">
+                        <img src="avatar.jpg" alt="Szymon Derleta" width="240" height="240" class="w-44 h-44 md:w-60 md:h-60 rounded-full object-cover border-4 border-[#0b1120]">
+                    </picture>
+                </div>
+            </div>
+
+            <div class="text-center md:text-left">
+                <p class="reveal section-eyebrow mb-4">Hi, I'm</p>
+                <h1 class="reveal text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-5">
+                    Szymon <span class="text-gradient">Derleta</span>
+                </h1>
+                <p class="reveal text-lg md:text-xl text-slate-300 font-light leading-relaxed max-w-2xl mx-auto md:mx-0 mb-8">
+                    Aspiring <span class="text-blue-400 font-medium">Junior Java Developer</span> focused on
+                    <span class="text-blue-400 font-medium">Spring ecosystems</span>,
+                    <span class="text-emerald-400 font-medium">home-lab infrastructure</span> and
+                    <span class="text-emerald-400 font-medium">system monitoring</span>.
+                    Building and maintaining distributed services at <span class="text-white font-medium">MilkyWay-HomeLabs</span>.
+                </p>
+
+                <div class="reveal flex flex-wrap justify-center md:justify-start gap-3 mb-8">
+                    <a href="#projects" class="btn btn-primary">
+                        View projects <i class="fas fa-arrow-down text-xs"></i>
+                    </a>
+                    <a href="mailto:szymonderleta@gmail.com" class="btn btn-ghost">
+                        <i class="fas fa-envelope text-xs"></i> Get in touch
+                    </a>
+                </div>
+
+                <div class="reveal flex flex-wrap justify-center md:justify-start items-center gap-5">
+                    <div class="flex gap-2">
+                        <a href="https://github.com/szymonderleta" class="icon-link" title="GitHub" aria-label="GitHub">
+                            <i class="fab fa-github text-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/szymon-derleta-3b7117371/" class="icon-link" title="LinkedIn" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="mailto:szymonderleta@gmail.com" class="icon-link" title="Email" aria-label="Send Email">
+                            <i class="fas fa-envelope text-lg"></i>
+                        </a>
                     </div>
-                    <div class="flex-1">
-                        <h1 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400 mb-4">
-                            Szymon Derleta
-                        </h1>
-                        <p class="text-xl md:text-2xl text-gray-200 font-light leading-relaxed mb-6">
-                            Aspiring <span class="text-blue-400 font-semibold">Junior Java Developer</span> focused on <span class="text-blue-400 font-semibold">Spring ecosystems</span>, 
-                            <span class="text-emerald-400 font-semibold">home-lab infrastructure</span>, and <span class="text-blue-400 font-semibold">system monitoring</span>. 
-                            Building and maintaining distributed services at <span class="text-emerald-400/90 italic font-medium">MilkyWay-HomeLabs</span>.
-                        </p>
-                        <div class="flex flex-wrap justify-center md:justify-start gap-6 items-center">
-                            <div class="flex space-x-5">
-                                <a href="https://github.com/szymonderleta" class="text-gray-400 hover:text-white transition-all transform hover:scale-110" title="Personal GitHub" aria-label="Personal GitHub">
-                                    <i class="fab fa-github text-3xl"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/szymon-derleta-3b7117371/" class="text-gray-400 hover:text-blue-400 transition-all transform hover:scale-110" title="LinkedIn" aria-label="LinkedIn">
-                                    <i class="fab fa-linkedin text-3xl"></i>
-                                </a>
-                                <a href="mailto:szymonderleta@gmail.com" class="text-gray-400 hover:text-white transition-all transform hover:scale-110" title="Email" aria-label="Send Email">
-                                    <i class="fas fa-envelope text-3xl"></i>
-                                </a>
-                            </div>
-                            <div class="h-8 w-px bg-slate-700 hidden sm:block"></div>
-                            <div class="flex items-center space-x-3">
-                                <img src="https://avatars.githubusercontent.com/u/257604232?s=400&u=b411017921f0be7e1bce422215ceeff9d29c31ca&v=4" alt="MilkyWay-HomeLabs" class="w-8 h-8 rounded-lg border border-emerald-500/30">
-                                <p class="text-sm text-gray-400 italic font-medium">
-                                    Lead at <a href="https://github.com/MilkyWay-HomeLabs" class="text-emerald-500 hover:text-emerald-400 transition-colors">MilkyWay-HomeLabs</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <span class="h-8 w-px bg-white/10 hidden sm:block"></span>
+                    <a href="https://github.com/MilkyWay-HomeLabs" class="flex items-center gap-3 group">
+                        <img src="https://avatars.githubusercontent.com/u/257604232?s=64" alt="" width="32" height="32" class="w-8 h-8 rounded-lg border border-emerald-500/30">
+                        <span class="text-sm text-slate-400">
+                            Lead at <span class="text-emerald-400 font-medium group-hover:text-emerald-300 transition-colors">MilkyWay-HomeLabs</span>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-4 pb-4" style="zoom: 0.95;">
+    <main class="max-w-6xl mx-auto px-4">
 
-        <!-- Skills Section -->
-        <section class="mb-8 relative animate-reveal stagger-1">
-            <details open class="bg-slate-800/20 border border-white/5 rounded-3xl overflow-hidden shadow-xl">
-                <summary class="p-4 md:p-6 flex items-center justify-between bg-slate-800/40 hover:bg-slate-800/60 transition-colors">
-                    <span class="flex items-center space-x-4">
-                        <span class="w-10 h-10 bg-blue-500/20 rounded-xl flex items-center justify-center border border-blue-500/30">
-                            <i class="fas fa-layer-group text-blue-400"></i>
-                        </span>
-                        <span class="text-2xl font-bold text-white">Technical Skills</span>
-                    </span>
-                    <i class="fas fa-chevron-down text-gray-400 accordion-icon"></i>
-                </summary>
-                <div class="accordion-content p-4 md:p-6 border-t border-white/5">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div class="p-6 bg-slate-800/40 rounded-2xl border border-white/10 backdrop-blur-sm hover:border-blue-500/30 transition-colors duration-500">
-                            <h3 class="text-lg font-bold text-blue-400 mb-4 flex items-center">
-                                <i class="fas fa-code-branch mr-3"></i> Backend Development
-                            </h3>
-                            <ul class="space-y-3 text-gray-300 text-sm">
-                                <li class="flex items-center"><i class="fab fa-java text-red-400 w-6 text-base"></i> Java 17/21 (Core)</li>
-                                <li class="flex items-center"><i class="fas fa-leaf text-emerald-500 w-6 text-base"></i> Spring Boot & Security</li>
-                                <li class="flex items-center"><i class="fas fa-database text-amber-500 w-6 text-base"></i> Hibernate & SQL</li>
-                                <li class="flex items-center"><i class="fas fa-vial text-blue-400 w-6 text-base"></i> JUnit 5 & Mockito</li>
-                            </ul>
-                        </div>
-                        <div class="p-6 bg-slate-800/40 rounded-2xl border border-white/10 backdrop-blur-sm hover:border-emerald-500/30 transition-colors duration-500">
-                            <h3 class="text-lg font-bold text-emerald-400 mb-4 flex items-center">
-                                <i class="fas fa-server mr-3"></i> Infrastructure & DevOps
-                            </h3>
-                            <ul class="space-y-3 text-gray-300 text-sm">
-                                <li class="flex items-center"><i class="fab fa-docker text-blue-400 w-6 text-base"></i> Docker & Compose</li>
-                                <li class="flex items-center"><i class="fas fa-terminal text-gray-300 w-6 text-base"></i> Linux Administration</li>
-                                <li class="flex items-center"><i class="fas fa-project-diagram text-blue-300 w-6 text-base"></i> CI/CD Fundamentals</li>
-                                <li class="flex items-center"><i class="fas fa-chart-line text-orange-400 w-6 text-base"></i> Prometheus & Grafana</li>
-                            </ul>
-                        </div>
-                        <div class="p-6 bg-slate-800/40 rounded-2xl border border-white/10 backdrop-blur-sm hover:border-purple-500/30 transition-colors duration-500">
-                            <h3 class="text-lg font-bold text-purple-400 mb-4 flex items-center">
-                                <i class="fas fa-tools mr-3"></i> Other Technologies
-                            </h3>
-                            <ul class="space-y-3 text-gray-300 text-sm">
-                                <li class="flex items-center"><i class="fab fa-git-alt text-orange-600 w-6 text-base"></i> Git Version Control</li>
-                                <li class="flex items-center"><i class="fab fa-react text-cyan-400 w-6 text-base"></i> React & TypeScript</li>
-                                <li class="flex items-center"><i class="fab fa-microsoft text-blue-600 w-6 text-base"></i> .NET & Blazor</li>
-                                <li class="flex items-center"><i class="fas fa-book text-gray-400 w-6 text-base"></i> Clean Code & SOLID</li>
-                            </ul>
-                        </div>
+        <!-- Skills -->
+        <section id="skills" class="py-16 md:py-20">
+            <div class="reveal mb-10">
+                <p class="section-eyebrow mb-2">01 / Skills</p>
+                <h2 class="section-title">Technical toolbox</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card accent-blue reveal">
+                    <div class="flex items-center gap-4 mb-5">
+                        <span class="icon-tile"><i class="fas fa-code-branch text-lg"></i></span>
+                        <h3 class="text-lg font-bold text-white">Backend Development</h3>
                     </div>
+                    <ul class="space-y-1">
+                        <li class="skill-item"><i class="fab fa-java text-red-400"></i> Java 17/21 (Core)</li>
+                        <li class="skill-item"><i class="fas fa-leaf text-emerald-400"></i> Spring Boot & Security</li>
+                        <li class="skill-item"><i class="fas fa-database text-amber-400"></i> Hibernate & SQL</li>
+                        <li class="skill-item"><i class="fas fa-vial text-blue-400"></i> JUnit 5 & Mockito</li>
+                    </ul>
                 </div>
-            </details>
-        </section>
 
-        <!-- MilkyWay-HomeLabs Section -->
-        <section class="mb-8 relative">
-            <div class="absolute inset-0 bg-emerald-500/5 blur-[140px] rounded-full pointer-events-none translate-x-1/4"></div>
-            <div class="relative z-10 animate-reveal stagger-1">
-                <details open class="bg-slate-900/20 border border-white/5 rounded-3xl overflow-hidden shadow-2xl">
-                    <summary class="p-4 md:p-6 flex items-center justify-between bg-slate-800/20 hover:bg-slate-800/40 transition-colors">
-                        <span class="flex items-center space-x-4">
-                            <span class="w-10 h-10 bg-emerald-500/20 rounded-xl flex items-center justify-center border border-emerald-500/30">
-                                <i class="fas fa-project-diagram text-emerald-400"></i>
-                            </span>
-                            <span class="text-2xl font-bold text-white">MilkyWay-HomeLabs Ecosystem</span>
-                        </span>
-                        <i class="fas fa-chevron-down text-gray-400 accordion-icon"></i>
-                    </summary>
-                    <div class="accordion-content p-4 md:p-6 border-t border-white/5">
-                        <div class="text-center mb-6">
-                            <p class="text-gray-400 max-w-3xl mx-auto mb-4 text-lg leading-relaxed">
-                                A personal microservices ecosystem built for testing and development. 
-                                Focused on <span class="text-emerald-400">automated deployment</span>, <span class="text-blue-400">secure communication</span>, and <span class="text-orange-400">monitoring</span>.
-                            </p>
-                            
-                            <div class="max-w-4xl mx-auto mb-6 p-1 bg-gradient-to-r from-blue-500/10 to-emerald-500/10 rounded-2xl">
-                                <div class="px-6 py-4 bg-slate-900/40 backdrop-blur-xl rounded-[14px] border border-white/5 shadow-inner">
-                                    <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12">
-                                        <!-- Tech Stack Categories -->
-                                        <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-4 text-gray-400">
-                                            <!-- Environments -->
-                                            <div class="flex items-center space-x-4 border-r border-slate-700/50 pr-8">
-                                                <span class="text-[9px] uppercase tracking-widest text-slate-500 font-bold">Env</span>
-                                                <div class="flex space-x-3">
-                                                    <div class="flex items-center space-x-1.5" title="Production">
-                                                        <span class="w-2 h-2 bg-emerald-500 rounded-full shadow-[0_0_8px_rgba(16,185,129,0.5)]"></span>
-                                                        <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-500/80">Prod</span>
-                                                    </div>
-                                                    <div class="flex items-center space-x-1.5" title="Testing">
-                                                        <span class="w-2 h-2 bg-blue-500 rounded-full shadow-[0_0_8px_rgba(59,130,246,0.5)]"></span>
-                                                        <span class="text-[10px] font-bold uppercase tracking-wider text-blue-500/80">Test</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Infrastructure -->
-                                            <div class="flex items-center space-x-3 border-r border-slate-700/30 pr-8">
-                                                <i class="fab fa-docker text-xl text-blue-400/80" title="Docker"></i>
-                                                <i class="fas fa-route text-lg text-slate-400 hover:text-blue-400 transition-colors" title="Traefik"></i>
-                                            </div>
-                                            
-                                            <!-- Monitoring -->
-                                            <div class="flex items-center space-x-3 border-r border-slate-700/30 pr-8">
-                                                <i class="fas fa-chart-line text-lg text-slate-400 hover:text-orange-400 transition-colors" title="Prometheus"></i>
-                                                <i class="fas fa-chart-area text-lg text-slate-400 hover:text-orange-500 transition-colors" title="Grafana"></i>
-                                            </div>
-
-                                            <!-- Databases -->
-                                            <div class="flex items-center space-x-3 border-r border-slate-700/30 pr-8">
-                                                <i class="fas fa-server text-lg text-slate-400 hover:text-amber-400 transition-colors" title="MariaDB"></i>
-                                                <i class="fas fa-database text-lg text-slate-400 hover:text-blue-500 transition-colors" title="PostgreSQL"></i>
-                                            </div>
-
-                                            <!-- Code -->
-                                            <div class="flex items-center space-x-3">
-                                                <i class="fab fa-java text-xl text-slate-400 hover:text-red-400 transition-colors" title="Java"></i>
-                                                <i class="fab fa-react text-xl text-slate-400 hover:text-cyan-400 transition-colors" title="React"></i>
-                                                <i class="fab fa-microsoft text-xl text-slate-400 hover:text-blue-600 transition-colors" title=".NET"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            <!-- Core Infrastructure Ecosystem -->
-                            <div class="col-span-1 md:col-span-2 lg:col-span-3">
-                                <div class="relative p-1 bg-gradient-to-r from-blue-500/10 via-emerald-500/10 to-blue-500/10 rounded-[2.5rem] mb-6">
-                                    <div class="bg-slate-900/60 backdrop-blur-3xl p-6 rounded-[2.3rem] border border-white/5">
-                                        <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-4">
-                                            <div class="flex items-center space-x-5">
-                                                <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center border border-blue-500/30">
-                                                    <i class="fas fa-microchip text-blue-400 text-2xl"></i>
-                                                </div>
-                                                <div>
-                                                    <h3 class="text-2xl font-bold text-white">Core Services</h3>
-                                                    <p class="text-blue-400 font-medium tracking-wide uppercase text-xs mt-1">Foundation Layer</p>
-                                                </div>
-                                            </div>
-                                            <p class="text-gray-400 max-w-xl text-center md:text-right leading-relaxed">
-                                                The backbone of the MilkyWay-HomeLabs ecosystem, providing essential infrastructure, 
-                                                secure authentication, and automated service management.
-                                            </p>
-                                        </div>
-                                        
-                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                            <!-- MilkyWay Test Env -->
-                                            <div class="project-card project-card-milkyway bg-slate-800/40 backdrop-blur-xl p-6 rounded-3xl border border-white/5 shadow-2xl flex flex-col h-full group">
-                                                <div class="flex items-start justify-between mb-6">
-                                                    <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center border border-blue-500/20 group-hover:scale-110 transition-transform duration-300">
-                                                        <i class="fab fa-docker text-blue-400 text-2xl"></i>
-                                                    </div>
-                                                    <div class="flex space-x-3 text-gray-500">
-                                                        <i class="fab fa-docker text-lg hover:text-blue-400 transition-colors" title="Docker Compose"></i>
-                                                        <i class="fas fa-route text-lg hover:text-blue-400 transition-colors" title="Traefik"></i>
-                                                        <i class="fas fa-chart-area text-lg hover:text-orange-500 transition-colors" title="Grafana"></i>
-                                                        <i class="fas fa-chart-line text-lg hover:text-orange-400 transition-colors" title="Prometheus"></i>
-                                                    </div>
-                                                </div>
-                                                <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-2">MilkyWay Test Env</h3>
-                                                <div class="mb-4">
-                                                    <span class="badge badge-blue">Infrastructure</span>
-                                                </div>
-                                                <p class="text-gray-400 mb-6 flex-grow leading-relaxed">A pre-configured test environment using Docker Compose. Features automated service discovery via Traefik and comprehensive monitoring.</p>
-                                                
-                                                <div class="flex items-center justify-end mt-auto pt-6 border-t border-slate-700/30">
-                                                    <a href="https://github.com/MilkyWay-HomeLabs/milkyway-test-env" class="text-blue-400 hover:text-blue-300 transition-all flex items-center font-bold text-sm tracking-wider group/link">
-                                                        REPOSITORY <i class="fas fa-arrow-right ml-2 text-xs transform group-hover/link:translate-x-1 transition-transform"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <!-- Andromeda Auth Server -->
-                                            <div class="project-card project-card-milkyway bg-slate-800/40 backdrop-blur-xl p-6 rounded-3xl border border-white/5 shadow-2xl flex flex-col h-full group">
-                                                <div class="flex items-start justify-between mb-6">
-                                                    <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center border border-blue-500/20 group-hover:scale-110 transition-transform duration-300">
-                                                        <i class="fas fa-key text-blue-400 text-2xl"></i>
-                                                    </div>
-                                                    <div class="flex space-x-3 text-gray-500">
-                                                        <i class="fab fa-java text-lg hover:text-red-400 transition-colors" title="Java 21"></i>
-                                                        <i class="fas fa-leaf text-lg hover:text-emerald-400 transition-colors" title="Spring Boot 3.5"></i>
-                                                        <i class="fas fa-database text-lg hover:text-orange-400 transition-colors" title="MariaDB"></i>
-                                                    </div>
-                                                </div>
-                                                <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-2">Andromeda Auth Server</h3>
-                                                <div class="mb-4">
-                                                    <span class="badge badge-blue">Identity Service</span>
-                                                </div>
-                                                <p class="text-gray-400 mb-6 flex-grow leading-relaxed">JWT authorization service with token lifecycle management, data encryption, and email services. Secures the entire ecosystem.</p>
-                                                
-                                                <div class="flex items-center space-x-4 mb-8">
-                                                    <span class="flex items-center text-[10px] text-emerald-400 font-bold uppercase tracking-widest">
-                                                        <i class="fas fa-check-circle mr-1.5"></i> Tests 92.1%
-                                                    </span>
-                                                    <span class="flex items-center text-[10px] text-blue-400 font-bold uppercase tracking-widest">
-                                                        <i class="fas fa-tag mr-1.5"></i> 5.1.0
-                                                    </span>
-                                                </div>
-                                                <div class="flex items-center justify-end mt-auto pt-6 border-t border-slate-700/30">
-                                                    <a href="https://github.com/MilkyWay-HomeLabs/andromeda-authorization-server-public" class="text-blue-400 hover:text-blue-300 transition-all flex items-center font-bold text-sm tracking-wider group/link">
-                                                        REPOSITORY <i class="fas fa-arrow-right ml-2 text-xs transform group-hover/link:translate-x-1 transition-transform"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Nebula Fullstack Ecosystem -->
-                            <div class="col-span-1 md:col-span-2 lg:col-span-3">
-                                <div class="relative p-1 bg-gradient-to-r from-blue-500/10 via-emerald-500/10 to-blue-500/10 rounded-[2.5rem] mb-6">
-                                    <div class="bg-slate-900/60 backdrop-blur-3xl p-6 rounded-[2.3rem] border border-white/5">
-                                        <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-4">
-                                            <div class="flex items-center space-x-5">
-                                                <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center border border-blue-500/30">
-                                                    <i class="fas fa-layer-group text-blue-400 text-2xl"></i>
-                                                </div>
-                                                <div>
-                                                    <h3 class="text-2xl font-bold text-white">Nebula Ecosystem</h3>
-                                                    <p class="text-blue-400 font-medium tracking-wide uppercase text-xs mt-1">User Hub Platform</p>
-                                                </div>
-                                            </div>
-                                            <p class="text-gray-400 max-w-xl text-center md:text-right leading-relaxed">
-                                                A full-stack solution for user profile management and account lifecycle. Combines a powerful Java backend with a modern React frontend.
-                                            </p>
-                                        </div>
-                                        
-                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                            <!-- Nebula REST API -->
-                                            <div class="project-card project-card-milkyway bg-slate-800/40 backdrop-blur-xl p-6 rounded-3xl border border-white/5 shadow-2xl flex flex-col h-full group">
-                                                <div class="flex items-start justify-between mb-6">
-                                                    <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center border border-blue-500/20 group-hover:scale-110 transition-transform duration-300">
-                                                        <i class="fas fa-server text-blue-400 text-2xl"></i>
-                                                    </div>
-                                                    <div class="flex space-x-3 text-gray-500">
-                                                        <i class="fab fa-java text-lg hover:text-red-400 transition-colors" title="Java 21"></i>
-                                                        <i class="fas fa-leaf text-lg hover:text-emerald-400 transition-colors" title="Spring Boot 3.5"></i>
-                                                        <i class="fas fa-database text-lg hover:text-blue-400 transition-colors" title="Hibernate ORM"></i>
-                                                    </div>
-                                                </div>
-                                                <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-2">Nebula REST API</h3>
-                                                <div class="mb-4">
-                                                    <span class="badge badge-blue">Backend</span>
-                                                </div>
-                                                <p class="text-gray-400 mb-6 flex-grow leading-relaxed">Hexagonal architecture Spring Boot API with Hibernate ORM. Manages user accounts, achievements, profiles, and integrations with external services.</p>
-
-                                                <div class="flex items-center space-x-4 mb-8">
-                                                    <span class="flex items-center text-[10px] text-emerald-400 font-bold uppercase tracking-widest">
-                                                        <i class="fas fa-check-circle mr-1.5"></i> Tests 91.9%
-                                                    </span>
-                                                    <span class="flex items-center text-[10px] text-blue-400 font-bold uppercase tracking-widest">
-                                                        <i class="fas fa-tag mr-1.5"></i> 5.4.0-PUBLIC-PREVIEW
-                                                    </span>
-                                                </div>
-
-                                                <div class="flex items-center justify-end mt-auto pt-6 border-t border-slate-700/30">
-                                                    <a href="https://github.com/MilkyWay-HomeLabs/nebula-rest-api-public" class="text-blue-400 hover:text-blue-300 transition-all flex items-center font-bold text-sm tracking-wider group/link">
-                                                        REPOSITORY <i class="fas fa-arrow-right ml-2 text-xs transform group-hover/link:translate-x-1 transition-transform"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <!-- Nebula Front App -->
-                                            <div class="project-card project-card-milkyway bg-slate-800/40 backdrop-blur-xl p-6 rounded-3xl border border-white/5 shadow-2xl flex flex-col h-full group">
-                                                <div class="flex items-start justify-between mb-6">
-                                                    <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center border border-blue-500/20 group-hover:scale-110 transition-transform duration-300">
-                                                        <i class="fas fa-desktop text-blue-400 text-2xl"></i>
-                                                    </div>
-                                                    <div class="flex space-x-3 text-gray-500">
-                                                        <i class="fab fa-react text-lg hover:text-cyan-400 transition-colors" title="React 19"></i>
-                                                        <i class="fab fa-js text-lg hover:text-yellow-400 transition-colors" title="Vite"></i>
-                                                    </div>
-                                                </div>
-                                                <h3 class="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors mb-2">Nebula Home Frontend</h3>
-                                                <div class="mb-4">
-                                                    <span class="badge badge-blue">Frontend</span>
-                                                </div>
-                                                <p class="text-gray-400 mb-6 flex-grow leading-relaxed">React 19 single-page application for user profile management. Features avatar uploads, password changes, security settings, and profile customization.</p>
-
-                                                <div class="flex items-center space-x-4 mb-8">
-                                                    <span class="flex items-center text-[10px] text-emerald-400 font-bold uppercase tracking-widest">
-                                                        <i class="fas fa-check-circle mr-1.5"></i> Tests 89.81%
-                                                    </span>
-                                                    <span class="flex items-center text-[10px] text-blue-400 font-bold uppercase tracking-widest">
-                                                        <i class="fas fa-tag mr-1.5"></i> 4.1.0
-                                                    </span>
-                                                </div>
-
-                                                <div class="flex items-center justify-end mt-auto pt-6 border-t border-slate-700/30">
-                                                    <a href="https://github.com/MilkyWay-HomeLabs/nebula-home" class="text-blue-400 hover:text-blue-300 transition-all flex items-center font-bold text-sm tracking-wider group/link">
-                                                        REPOSITORY <i class="fas fa-arrow-right ml-2 text-xs transform group-hover/link:translate-x-1 transition-transform"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Hacman Game Platform -->
-                            <div class="col-span-1 md:col-span-2 lg:col-span-3">
-                                <div class="relative p-1 bg-gradient-to-r from-blue-500/10 via-emerald-500/10 to-blue-500/10 rounded-[2.5rem]">
-                                    <div class="bg-slate-900/60 backdrop-blur-3xl p-6 rounded-[2.3rem] border border-white/5">
-                                        <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-4">
-                                            <div class="flex items-center space-x-5">
-                                                <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center border border-blue-500/30">
-                                                    <i class="fas fa-gamepad text-blue-400 text-2xl"></i>
-                                                </div>
-                                                <div>
-                                                    <h3 class="text-2xl font-bold text-white">Hacman Game Platform</h3>
-                                                    <p class="text-blue-400 font-medium tracking-wide uppercase text-xs mt-1">Game + User Management</p>
-                                                </div>
-                                            </div>
-                                            <p class="text-gray-400 max-w-xl text-center md:text-right leading-relaxed">
-                                                A comprehensive platform built with .NET 10. Includes a user panel for galleries and leaderboards, plus an interactive maze game client.
-                                            </p>
-                                        </div>
-
-                                        <!-- User Panel (Backend + Frontend) -->
-                                        <div class="mb-6 p-1 bg-gradient-to-r from-slate-700/30 to-blue-500/10 rounded-2xl">
-                                            <div class="bg-slate-800/20 backdrop-blur-md p-4 rounded-[14px] border border-white/5">
-                                                <h4 class="text-lg font-bold text-white mb-4 flex items-center">
-                                                    <i class="fas fa-users text-blue-400 mr-3"></i> User Panel (Full-Stack)
-                                                </h4>
-                                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                                    <!-- Panel Backend -->
-                                                    <div class="project-card bg-slate-800/30 backdrop-blur p-5 rounded-2xl border border-white/5 flex flex-col h-full group">
-                                                        <div class="flex items-start justify-between mb-4">
-                                                            <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center border border-blue-500/20 group-hover:scale-105 transition-transform duration-300">
-                                                                <i class="fas fa-database text-blue-400 text-lg"></i>
-                                                            </div>
-                                                            <div class="flex space-x-2 text-gray-500 text-sm">
-                                                                <i class="fab fa-microsoft hover:text-blue-600 transition-colors" title=".NET 10"></i>
-                                                                <i class="fas fa-server hover:text-blue-400 transition-colors" title="ASP.NET Core"></i>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="font-bold text-white group-hover:text-blue-400 transition-colors mb-2">Backend API</h5>
-                                                        <p class="text-gray-400 text-sm mb-3 flex-grow">DDD bounded contexts. Manages galleries, user progress, scores, and level templates via REST.</p>
-                                                        <div class="flex items-center justify-between text-[9px] text-emerald-400 font-bold uppercase tracking-widest">
-                                                            <span><i class="fas fa-check-circle mr-1"></i> 143 tests</span>
-                                                            <span><i class="fas fa-tag mr-1"></i> 2.1.0</span>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Panel Frontend -->
-                                                    <div class="project-card bg-slate-800/30 backdrop-blur p-5 rounded-2xl border border-white/5 flex flex-col h-full group">
-                                                        <div class="flex items-start justify-between mb-4">
-                                                            <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center border border-blue-500/20 group-hover:scale-105 transition-transform duration-300">
-                                                                <i class="fas fa-wand-magic-sparkles text-purple-400 text-lg"></i>
-                                                            </div>
-                                                            <div class="flex space-x-2 text-gray-500 text-sm">
-                                                                <i class="fab fa-microsoft hover:text-blue-600 transition-colors" title=".NET 10"></i>
-                                                                <i class="fas fa-fire hover:text-orange-400 transition-colors" title="Blazor Server"></i>
-                                                            </div>
-                                                        </div>
-                                                        <h5 class="font-bold text-white group-hover:text-blue-400 transition-colors mb-2">Frontend UI</h5>
-                                                        <p class="text-gray-400 text-sm mb-3 flex-grow">Blazor Server interactive components. Gallery browsing, progress tracking, and score leaderboards.</p>
-                                                        <div class="flex items-center justify-between text-[9px] text-emerald-400 font-bold uppercase tracking-widest">
-                                                            <span><i class="fas fa-check-circle mr-1"></i> 99 tests</span>
-                                                            <span><i class="fas fa-tag mr-1"></i> 2.0.0</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Game Client -->
-                                        <div class="p-1 bg-gradient-to-r from-slate-700/30 to-emerald-500/10 rounded-2xl">
-                                            <div class="bg-slate-800/20 backdrop-blur-md p-4 rounded-[14px] border border-white/5">
-                                                <h4 class="text-lg font-bold text-white mb-4 flex items-center">
-                                                    <i class="fas fa-controller text-emerald-400 mr-3"></i> Game Client
-                                                </h4>
-                                                <div class="project-card bg-slate-800/30 backdrop-blur p-5 rounded-2xl border border-white/5 flex flex-col group">
-                                                    <div class="flex items-start justify-between mb-4">
-                                                        <div class="flex-1">
-                                                            <div class="flex items-center space-x-3 mb-2">
-                                                                <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center border border-blue-500/20 group-hover:scale-105 transition-transform duration-300">
-                                                                    <i class="fas fa-puzzle-piece text-blue-400 text-lg"></i>
-                                                                </div>
-                                                                <div>
-                                                                    <h5 class="font-bold text-white group-hover:text-blue-400 transition-colors">Interactive Maze Game</h5>
-                                                                    <p class="text-[10px] text-blue-400 uppercase tracking-wide font-medium">React 19 + TypeScript</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex space-x-2 text-gray-500 text-sm">
-                                                            <i class="fab fa-react hover:text-cyan-400 transition-colors" title="React 19"></i>
-                                                            <i class="fab fa-js hover:text-yellow-400 transition-colors" title="TypeScript + Vite"></i>
-                                                        </div>
-                                                    </div>
-                                                    <p class="text-gray-400 text-sm mb-4">Web-based maze game with enemy AI, power-ups/debuffs, and score reporting. Launched from gallery context with dynamic difficulty levels.</p>
-                                                    <div class="flex items-center justify-between text-[9px] text-emerald-400 font-bold uppercase tracking-widest">
-                                                        <span><i class="fas fa-check-circle mr-1"></i> Coverage ≥80%</span>
-                                                        <span><i class="fas fa-tag mr-1"></i> 1.2.2</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Repository Links -->
-                                        <div class="mt-6 pt-6 border-t border-slate-700/30 grid grid-cols-1 md:grid-cols-3 gap-4">
-                                            <a href="https://github.com/MilkyWay-HomeLabs/hacman-app-public" class="text-blue-400 hover:text-blue-300 transition-all flex items-center font-bold text-sm tracking-wider group/link justify-center p-3 bg-slate-800/30 rounded-lg border border-blue-500/20 hover:border-blue-500/40">
-                                                <i class="fas fa-cube mr-2"></i> Full Platform <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                                            </a>
-                                            <a href="https://github.com/MilkyWay-HomeLabs/hacman-app-public/tree/main/hacman-app-back" class="text-blue-400 hover:text-blue-300 transition-all flex items-center font-bold text-sm tracking-wider group/link justify-center p-3 bg-slate-800/30 rounded-lg border border-blue-500/20 hover:border-blue-500/40">
-                                                <i class="fas fa-server mr-2"></i> Backend Docs <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                                            </a>
-                                            <a href="https://github.com/MilkyWay-HomeLabs/hacman-game-public" class="text-blue-400 hover:text-blue-300 transition-all flex items-center font-bold text-sm tracking-wider group/link justify-center p-3 bg-slate-800/30 rounded-lg border border-blue-500/20 hover:border-blue-500/40">
-                                                <i class="fas fa-gamepad mr-2"></i> Game Client <i class="fas fa-arrow-right ml-2 text-xs"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="card accent-emerald reveal">
+                    <div class="flex items-center gap-4 mb-5">
+                        <span class="icon-tile"><i class="fas fa-server text-lg"></i></span>
+                        <h3 class="text-lg font-bold text-white">Infrastructure & DevOps</h3>
                     </div>
-                </details>
+                    <ul class="space-y-1">
+                        <li class="skill-item"><i class="fab fa-docker text-blue-400"></i> Docker & Compose</li>
+                        <li class="skill-item"><i class="fas fa-terminal text-slate-300"></i> Linux Administration</li>
+                        <li class="skill-item"><i class="fas fa-diagram-project text-sky-300"></i> CI/CD Fundamentals</li>
+                        <li class="skill-item"><i class="fas fa-chart-line text-orange-400"></i> Prometheus & Grafana</li>
+                    </ul>
+                </div>
+
+                <div class="card accent-purple reveal">
+                    <div class="flex items-center gap-4 mb-5">
+                        <span class="icon-tile"><i class="fas fa-screwdriver-wrench text-lg"></i></span>
+                        <h3 class="text-lg font-bold text-white">Other Technologies</h3>
+                    </div>
+                    <ul class="space-y-1">
+                        <li class="skill-item"><i class="fab fa-git-alt text-orange-500"></i> Git Version Control</li>
+                        <li class="skill-item"><i class="fab fa-react text-cyan-400"></i> React & TypeScript</li>
+                        <li class="skill-item"><i class="fab fa-microsoft text-blue-500"></i> .NET & Blazor</li>
+                        <li class="skill-item"><i class="fas fa-book text-slate-400"></i> Clean Code & SOLID</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <!-- Andromeda Archives Section -->
-        <section class="relative mb-8">
-            <div class="absolute inset-0 bg-purple-500/5 blur-[140px] rounded-full pointer-events-none -translate-x-1/4"></div>
-            <div class="relative z-10 animate-reveal">
-                <details open class="bg-slate-900/20 border border-white/5 rounded-3xl overflow-hidden shadow-2xl">
-                    <summary class="p-4 md:p-6 flex items-center justify-between bg-slate-800/20 hover:bg-slate-800/40 transition-colors border-t border-slate-800/50">
-                        <span class="flex items-center space-x-4">
-                            <span class="w-10 h-10 bg-purple-500/20 rounded-xl flex items-center justify-center border border-purple-500/30">
-                                <i class="fas fa-archive text-purple-400"></i>
-                            </span>
-                            <span class="text-2xl font-bold text-white">Andromeda Archives</span>
-                        </span>
-                        <i class="fas fa-chevron-down text-gray-400 accordion-icon"></i>
-                    </summary>
-                    <div class="accordion-content p-4 md:p-6 border-t border-white/5">
-                        <div class="text-center mb-8">
-                            <p class="text-gray-400 max-w-2xl mx-auto mb-6 text-lg">
-                                Historical and personal projects maintained under my primary profile.
-                            </p>
-                            <div class="flex justify-center gap-4">
-                                <a href="https://github.com/szymonderleta/" class="px-6 py-2 bg-slate-800 hover:bg-slate-700 border border-purple-500/30 rounded-full inline-flex items-center text-sm font-bold text-purple-400 hover:text-purple-300 transition-all">
-                                    View szymonderleta Profile <i class="fab fa-github ml-2"></i>
-                                </a>
-                            </div>
-                        </div>
+        <!-- MilkyWay-HomeLabs -->
+        <section id="projects" class="py-16 md:py-20">
+            <div class="reveal flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+                <div>
+                    <p class="section-eyebrow mb-2">02 / Projects</p>
+                    <h2 class="section-title">MilkyWay-HomeLabs Ecosystem</h2>
+                    <p class="text-slate-400 max-w-2xl mt-3 leading-relaxed">
+                        A personal microservices ecosystem built for testing and development. Focused on
+                        <span class="text-emerald-400">automated deployment</span>, <span class="text-blue-400">secure communication</span>
+                        and <span class="text-orange-400">monitoring</span>.
+                    </p>
+                </div>
+                <a href="https://github.com/MilkyWay-HomeLabs" class="btn btn-ghost self-start lg:self-auto shrink-0">
+                    <i class="fab fa-github"></i> Organization
+                </a>
+            </div>
 
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            <!-- Andromeda -->
-                            <div class="project-card project-card-andromeda bg-slate-900/40 backdrop-blur-xl p-6 rounded-3xl border border-white/5 shadow-2xl flex flex-col h-full group">
-                                <div class="flex items-start justify-between mb-6">
-                                    <div class="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center border border-purple-500/20 group-hover:scale-110 transition-transform duration-300">
-                                        <i class="fas fa-archive text-purple-400 text-2xl"></i>
-                                    </div>
-                                    <div class="flex space-x-3 text-gray-500">
-                                        <i class="fab fa-java text-lg hover:text-red-400 transition-colors" title="Java"></i>
-                                        <i class="fas fa-leaf text-lg hover:text-emerald-400 transition-colors" title="Spring"></i>
-                                    </div>
-                                </div>
-                                <h3 class="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors mb-2">Andromeda</h3>
-                                <div class="mb-4">
-                                    <span class="badge badge-purple">Core Project</span>
-                                </div>
-                                <p class="text-gray-400 mb-6 flex-grow leading-relaxed">Main Andromeda Project repository. The foundation of the entire ecosystem.</p>
-                                <div class="flex items-center justify-end mt-auto pt-6 border-t border-slate-700/30">
-                                    <a href="https://github.com/szymonderleta/andromeda" class="text-purple-400 hover:text-purple-300 transition-all flex items-center font-bold text-sm tracking-wider group/link">
-                                        REPOSITORY <i class="fas fa-arrow-right ml-2 text-xs transform group-hover/link:translate-x-1 transition-transform"></i>
-                                    </a>
-                                </div>
-                            </div>
+            <!-- Stack strip -->
+            <div class="reveal panel px-5 py-4 mb-14 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
+                <div class="flex items-center gap-4 pr-6 sm:border-r border-white/10">
+                    <span class="font-mono text-[11px] uppercase tracking-widest text-slate-500">Env</span>
+                    <span class="flex items-center gap-2 text-emerald-400 text-xs font-semibold"><span class="env-dot bg-emerald-400 text-emerald-400"></span>Prod</span>
+                    <span class="flex items-center gap-2 text-blue-400 text-xs font-semibold"><span class="env-dot bg-blue-400 text-blue-400"></span>Test</span>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech"><i class="fab fa-docker text-blue-400"></i>Docker</span>
+                    <span class="tech"><i class="fas fa-route text-sky-300"></i>Traefik</span>
+                    <span class="tech"><i class="fas fa-chart-line text-orange-400"></i>Prometheus</span>
+                    <span class="tech"><i class="fas fa-chart-area text-orange-500"></i>Grafana</span>
+                    <span class="tech"><i class="fas fa-database text-amber-400"></i>MariaDB</span>
+                    <span class="tech"><i class="fas fa-database text-blue-400"></i>PostgreSQL</span>
+                    <span class="tech"><i class="fab fa-java text-red-400"></i>Java</span>
+                    <span class="tech"><i class="fab fa-react text-cyan-400"></i>React</span>
+                    <span class="tech"><i class="fab fa-microsoft text-blue-500"></i>.NET</span>
+                </div>
+            </div>
 
-                            <!-- Chess REST API -->
-                            <div class="project-card project-card-andromeda bg-slate-900/40 backdrop-blur-xl p-6 rounded-3xl border border-white/5 shadow-2xl flex flex-col h-full group">
-                                <div class="flex items-start justify-between mb-6">
-                                    <div class="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center border border-purple-500/20 group-hover:scale-110 transition-transform duration-300">
-                                        <i class="fas fa-chess-knight text-purple-400 text-2xl"></i>
-                                    </div>
-                                    <div class="flex space-x-3 text-gray-500">
-                                        <i class="fab fa-java text-lg hover:text-red-400 transition-colors" title="Java"></i>
-                                        <i class="fas fa-leaf text-lg hover:text-emerald-400 transition-colors" title="Spring Boot"></i>
-                                        <i class="fas fa-code text-lg hover:text-blue-400 transition-colors" title="REST API"></i>
-                                    </div>
-                                </div>
-                                <h3 class="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors mb-2">Chess REST API</h3>
-                                <div class="mb-4">
-                                    <span class="badge badge-purple">Game Logic</span>
-                                </div>
-                                <p class="text-gray-400 mb-6 flex-grow leading-relaxed">Chess engine implementation with a REST API, featuring move validation and state management for web-based games.</p>
-                                <div class="flex items-center justify-end mt-auto pt-6 border-t border-slate-700/30">
-                                    <a href="https://github.com/szymonderleta/chess-rest-api-public" class="text-purple-400 hover:text-purple-300 transition-all flex items-center font-bold text-sm tracking-wider group/link">
-                                        REPOSITORY <i class="fas fa-arrow-right ml-2 text-xs transform group-hover/link:translate-x-1 transition-transform"></i>
-                                    </a>
-                                </div>
-                            </div>
+            <!-- Core Services -->
+            <div class="mb-16">
+                <div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+                    <div class="flex items-center gap-4">
+                        <span class="icon-tile accent-blue"><i class="fas fa-microchip text-lg"></i></span>
+                        <div>
+                            <p class="font-mono text-[11px] uppercase tracking-widest text-blue-400">Foundation Layer</p>
+                            <h3 class="text-2xl font-bold text-white">Core Services</h3>
                         </div>
                     </div>
-                </details>
+                    <p class="text-slate-400 text-sm max-w-md md:text-right leading-relaxed">
+                        The backbone of the ecosystem: essential infrastructure, secure authentication and automated service management.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <article class="card accent-blue reveal">
+                        <div class="flex items-start justify-between gap-4 mb-5">
+                            <span class="icon-tile"><i class="fab fa-docker text-xl"></i></span>
+                            <span class="badge">Infrastructure</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">MilkyWay Test Env</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">A pre-configured test environment using Docker Compose. Features automated service discovery via Traefik and comprehensive monitoring.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="tech">Docker Compose</span>
+                            <span class="tech">Traefik</span>
+                            <span class="tech">Prometheus</span>
+                            <span class="tech">Grafana</span>
+                        </div>
+                        <div class="flex items-center justify-end pt-4 border-t border-white/5">
+                            <a href="https://github.com/MilkyWay-HomeLabs/milkyway-test-env" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="card accent-blue reveal">
+                        <div class="flex items-start justify-between gap-4 mb-5">
+                            <span class="icon-tile"><i class="fas fa-key text-xl"></i></span>
+                            <span class="badge">Identity Service</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Andromeda Auth Server</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">JWT authorization service with token lifecycle management, data encryption and email services. Secures the entire ecosystem.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="tech">Java 21</span>
+                            <span class="tech">Spring Boot 3.5</span>
+                            <span class="tech">MariaDB</span>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
+                            <div class="flex gap-4">
+                                <span class="meta meta-ok"><i class="fas fa-circle-check"></i>Tests 92.1%</span>
+                                <span class="meta meta-ver"><i class="fas fa-tag"></i>5.1.0</span>
+                            </div>
+                            <a href="https://github.com/MilkyWay-HomeLabs/andromeda-authorization-server-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Nebula -->
+            <div class="mb-16">
+                <div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+                    <div class="flex items-center gap-4">
+                        <span class="icon-tile accent-emerald"><i class="fas fa-layer-group text-lg"></i></span>
+                        <div>
+                            <p class="font-mono text-[11px] uppercase tracking-widest text-emerald-400">User Hub Platform</p>
+                            <h3 class="text-2xl font-bold text-white">Nebula Ecosystem</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-sm max-w-md md:text-right leading-relaxed">
+                        A full-stack solution for user profile management and account lifecycle: a Java backend paired with a modern React frontend.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <article class="card accent-emerald reveal">
+                        <div class="flex items-start justify-between gap-4 mb-5">
+                            <span class="icon-tile"><i class="fas fa-server text-xl"></i></span>
+                            <span class="badge">Backend</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Nebula REST API</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Hexagonal architecture Spring Boot API with Hibernate ORM. Manages user accounts, achievements, profiles and integrations with external services.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="tech">Java 21</span>
+                            <span class="tech">Spring Boot 3.5</span>
+                            <span class="tech">Hibernate ORM</span>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
+                            <div class="flex gap-4">
+                                <span class="meta meta-ok"><i class="fas fa-circle-check"></i>Tests 91.9%</span>
+                                <span class="meta meta-ver"><i class="fas fa-tag"></i>5.4.0-PUBLIC-PREVIEW</span>
+                            </div>
+                            <a href="https://github.com/MilkyWay-HomeLabs/nebula-rest-api-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="card accent-emerald reveal">
+                        <div class="flex items-start justify-between gap-4 mb-5">
+                            <span class="icon-tile"><i class="fas fa-desktop text-xl"></i></span>
+                            <span class="badge">Frontend</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Nebula Home Frontend</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">React 19 single-page application for user profile management. Features avatar uploads, password changes, security settings and profile customization.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="tech">React 19</span>
+                            <span class="tech">Vite</span>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
+                            <div class="flex gap-4">
+                                <span class="meta meta-ok"><i class="fas fa-circle-check"></i>Tests 89.81%</span>
+                                <span class="meta meta-ver"><i class="fas fa-tag"></i>4.1.0</span>
+                            </div>
+                            <a href="https://github.com/MilkyWay-HomeLabs/nebula-home" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Hacman -->
+            <div>
+                <div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+                    <div class="flex items-center gap-4">
+                        <span class="icon-tile accent-purple"><i class="fas fa-gamepad text-lg"></i></span>
+                        <div>
+                            <p class="font-mono text-[11px] uppercase tracking-widest text-purple-400">Game + User Management</p>
+                            <h3 class="text-2xl font-bold text-white">Hacman Game Platform</h3>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-sm max-w-md md:text-right leading-relaxed">
+                        A platform built with .NET 10: a full-stack user panel for galleries and leaderboards, plus an interactive maze game client.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <article class="card accent-purple reveal">
+                        <div class="flex items-start justify-between gap-4 mb-5">
+                            <span class="icon-tile"><i class="fas fa-database text-lg"></i></span>
+                            <span class="badge">User Panel · API</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2">Backend API</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">DDD bounded contexts. Manages galleries, user progress, scores and level templates via REST.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="tech">.NET 10</span>
+                            <span class="tech">ASP.NET Core</span>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
+                            <div class="flex gap-4">
+                                <span class="meta meta-ok"><i class="fas fa-circle-check"></i>143 tests</span>
+                                <span class="meta meta-ver"><i class="fas fa-tag"></i>2.1.0</span>
+                            </div>
+                            <a href="https://github.com/MilkyWay-HomeLabs/hacman-app-public/tree/main/hacman-app-back" class="link-arrow">Docs <i class="fas fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="card accent-purple reveal">
+                        <div class="flex items-start justify-between gap-4 mb-5">
+                            <span class="icon-tile"><i class="fas fa-wand-magic-sparkles text-lg"></i></span>
+                            <span class="badge">User Panel · UI</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2">Frontend UI</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Blazor Server interactive components. Gallery browsing, progress tracking and score leaderboards.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="tech">.NET 10</span>
+                            <span class="tech">Blazor Server</span>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
+                            <div class="flex gap-4">
+                                <span class="meta meta-ok"><i class="fas fa-circle-check"></i>99 tests</span>
+                                <span class="meta meta-ver"><i class="fas fa-tag"></i>2.0.0</span>
+                            </div>
+                            <a href="https://github.com/MilkyWay-HomeLabs/hacman-app-public" class="link-arrow">Platform <i class="fas fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="card accent-purple reveal md:col-span-2 lg:col-span-1">
+                        <div class="flex items-start justify-between gap-4 mb-5">
+                            <span class="icon-tile"><i class="fas fa-puzzle-piece text-lg"></i></span>
+                            <span class="badge">Game Client</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2">Interactive Maze Game</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Web-based maze game with enemy AI, power-ups/debuffs and score reporting. Launched from gallery context with dynamic difficulty levels.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="tech">React 19</span>
+                            <span class="tech">TypeScript</span>
+                            <span class="tech">Vite</span>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
+                            <div class="flex gap-4">
+                                <span class="meta meta-ok"><i class="fas fa-circle-check"></i>Coverage ≥80%</span>
+                                <span class="meta meta-ver"><i class="fas fa-tag"></i>1.2.2</span>
+                            </div>
+                            <a href="https://github.com/MilkyWay-HomeLabs/hacman-game-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Andromeda Archives -->
+        <section id="archive" class="py-16 md:py-20">
+            <div class="reveal flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+                <div>
+                    <p class="section-eyebrow mb-2" style="--accent: var(--purple)">03 / Archive</p>
+                    <h2 class="section-title">Andromeda Archives</h2>
+                    <p class="text-slate-400 max-w-2xl mt-3 leading-relaxed">Historical and personal projects maintained under my primary profile.</p>
+                </div>
+                <a href="https://github.com/szymonderleta/" class="btn btn-ghost self-start lg:self-auto shrink-0">
+                    <i class="fab fa-github"></i> szymonderleta
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <article class="card accent-purple reveal">
+                    <div class="flex items-start justify-between gap-4 mb-5">
+                        <span class="icon-tile"><i class="fas fa-box-archive text-xl"></i></span>
+                        <span class="badge">Core Project</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-2">Andromeda</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Main Andromeda Project repository. The foundation of the entire ecosystem.</p>
+                    <div class="flex flex-wrap gap-2 mb-5">
+                        <span class="tech">Java</span>
+                        <span class="tech">Spring</span>
+                    </div>
+                    <div class="flex items-center justify-end pt-4 border-t border-white/5">
+                        <a href="https://github.com/szymonderleta/andromeda" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </article>
+
+                <article class="card accent-purple reveal">
+                    <div class="flex items-start justify-between gap-4 mb-5">
+                        <span class="icon-tile"><i class="fas fa-chess-knight text-xl"></i></span>
+                        <span class="badge">Game Logic</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-2">Chess REST API</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Chess engine implementation with a REST API, featuring move validation and state management for web-based games.</p>
+                    <div class="flex flex-wrap gap-2 mb-5">
+                        <span class="tech">Java</span>
+                        <span class="tech">Spring Boot</span>
+                        <span class="tech">REST API</span>
+                    </div>
+                    <div class="flex items-center justify-end pt-4 border-t border-white/5">
+                        <a href="https://github.com/szymonderleta/chess-rest-api-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-16 md:py-20">
+            <div class="reveal panel relative overflow-hidden p-8 md:p-12 text-center">
+                <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-48 bg-gradient-to-r from-blue-500/20 to-emerald-500/20 blur-3xl rounded-full pointer-events-none"></div>
+                <p class="section-eyebrow mb-3 relative">04 / Contact</p>
+                <h2 class="section-title mb-4 relative">Let's build something together</h2>
+                <p class="text-slate-400 max-w-xl mx-auto mb-8 relative">
+                    Interested in my work, a collaboration or just want to talk Java, Spring or home labs? My inbox is open.
+                </p>
+                <div class="flex flex-wrap justify-center gap-3 relative">
+                    <a href="mailto:szymonderleta@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope text-xs"></i> szymonderleta@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/szymon-derleta-3b7117371/" class="btn btn-ghost">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="py-12 border-t border-slate-800/50 text-center">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <p class="text-sm text-gray-500 order-2 md:order-1">
-                    &copy; 2026 Szymon Derleta <span class="mx-3 text-slate-800">|</span> <span class="text-[10px] uppercase tracking-widest font-bold text-gray-600">derleta.org</span>
-                </p>
-                
-                <div class="flex space-x-6 text-gray-500 order-1 md:order-2">
-                    <a href="https://github.com/szymonderleta" class="hover:text-white transition-all transform hover:scale-110" aria-label="GitHub" title="GitHub">
-                        <i class="fab fa-github text-xl"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/szymon-derleta-3b7117371/" class="hover:text-blue-400 transition-all transform hover:scale-110" aria-label="LinkedIn" title="LinkedIn">
-                        <i class="fab fa-linkedin text-xl"></i>
-                    </a>
-                    <a href="mailto:szymonderleta@gmail.com" class="hover:text-white transition-all transform hover:scale-110" aria-label="Email" title="Email">
-                        <i class="fas fa-envelope text-xl"></i>
-                    </a>
-                </div>
+    <footer class="py-10 border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-sm text-slate-500">
+                &copy; <span id="year">2026</span> Szymon Derleta
+                <span class="mx-3 text-slate-700">|</span>
+                <span class="font-mono text-xs text-slate-600">derleta.org</span>
+            </p>
+            <div class="flex gap-2">
+                <a href="https://github.com/szymonderleta" class="icon-link" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/szymon-derleta-3b7117371/" class="icon-link" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:szymonderleta@gmail.com" class="icon-link" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="backToTop" class="fixed bottom-8 right-8 p-4 bg-slate-800/80 backdrop-blur-md border border-white/10 rounded-full text-blue-400 shadow-2xl opacity-0 translate-y-10 transition-all duration-300 pointer-events-none hover:bg-slate-700 group">
-        <i class="fas fa-chevron-up text-lg group-hover:-translate-y-1 transition-transform"></i>
+    <button id="backToTop" type="button" aria-label="Back to top" class="fixed bottom-6 right-6 w-12 h-12 flex items-center justify-center bg-slate-800/80 backdrop-blur-md border border-white/10 rounded-full text-blue-400 shadow-2xl opacity-0 translate-y-10 transition-all duration-300 pointer-events-none hover:bg-slate-700 group z-40">
+        <i class="fas fa-chevron-up group-hover:-translate-y-0.5 transition-transform"></i>
     </button>
 
     <script>
-        // Back to Top functionality
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const nav = document.getElementById('nav');
         const backToTopBtn = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                backToTopBtn.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
-                backToTopBtn.classList.add('opacity-100', 'translate-y-0');
-            } else {
-                backToTopBtn.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
-                backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
-            }
-        });
+
+        const onScroll = () => {
+            const y = window.scrollY;
+            nav.classList.toggle('is-scrolled', y > 10);
+            const show = y > 500;
+            backToTopBtn.classList.toggle('opacity-0', !show);
+            backToTopBtn.classList.toggle('translate-y-10', !show);
+            backToTopBtn.classList.toggle('pointer-events-none', !show);
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+
         backToTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        // Reveal elements as they scroll into view
+        const revealEls = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+            revealEls.forEach((el) => revealObserver.observe(el));
+
+            // Highlight the nav link of the section in view
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach((link) => {
+                            link.classList.toggle('is-active', link.getAttribute('href') === '#' + entry.target.id);
+                        });
+                    }
+                });
+            }, { rootMargin: '-45% 0px -50% 0px' });
+            document.querySelectorAll('section[id]').forEach((s) => sectionObserver.observe(s));
+        } else {
+            revealEls.forEach((el) => el.classList.add('is-visible'));
+        }
     </script>
 </body>
 </html>
