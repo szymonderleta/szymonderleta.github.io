@@ -421,12 +421,12 @@
                         </div>
                     </div>
                     <p class="text-slate-400 text-sm max-w-md md:text-right leading-relaxed">
-                        Chess services for the lab: seasons, tournaments, games and player rankings, served by a Spring Boot REST API.
+                        Chess apps for the lab: a Spring Boot REST API for seasons, tournaments, games and rankings, plus a web app and a playable game client.
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 gap-6">
-                    <article class="card accent-amber reveal">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <article class="card accent-amber reveal md:col-span-2 lg:col-span-1">
                         <div class="flex items-start justify-between gap-4 mb-5">
                             <span class="icon-tile"><i class="fas fa-chess-knight text-xl"></i></span>
                             <span class="badge">Backend</span>
@@ -446,6 +446,32 @@
                                 <span class="meta meta-ver"><i class="fas fa-tag"></i>3.0.0</span>
                             </div>
                             <a href="https://github.com/MilkyWay-HomeLabs/chess-rest-api-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="card accent-amber reveal">
+                        <div class="flex items-start justify-between gap-4 mb-5">
+                            <span class="icon-tile"><i class="fas fa-desktop text-xl"></i></span>
+                            <span class="badge">Frontend</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Chess Web App</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Chess web page providing the user interface for the platform, backed by the Chess REST API.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                            <span class="meta"><i class="fas fa-hammer"></i>In development</span>
+                            <span class="meta" title="This repository is private"><i class="fas fa-lock"></i>Private repository</span>
+                        </div>
+                    </article>
+
+                    <article class="card accent-amber reveal">
+                        <div class="flex items-start justify-between gap-4 mb-5">
+                            <span class="icon-tile"><i class="fas fa-chess-board text-xl"></i></span>
+                            <span class="badge">Game Client</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Chess Game App</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Chess game application that lets users play chess, backed by the Chess REST API.</p>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5">
+                            <span class="meta"><i class="fas fa-hammer"></i>In development</span>
+                            <span class="meta" title="This repository is private"><i class="fas fa-lock"></i>Private repository</span>
                         </div>
                     </article>
                 </div>
