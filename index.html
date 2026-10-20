@@ -145,7 +145,7 @@
                         <h3 class="text-lg font-bold text-white">Infrastructure & DevOps</h3>
                     </div>
                     <ul class="space-y-1">
-                        <li class="skill-item"><i class="fab fa-docker text-blue-400"></i> Docker & Compose</li>
+                        <li class="skill-item"><i class="fab fa-docker text-blue-400"></i> Docker, Compose & K3s</li>
                         <li class="skill-item"><i class="fas fa-terminal text-slate-300"></i> Linux Administration</li>
                         <li class="skill-item"><i class="fas fa-diagram-project text-sky-300"></i> CI/CD (GitHub Actions, Jenkins)</li>
                         <li class="skill-item"><i class="fas fa-chart-line text-orange-400"></i> Prometheus & Grafana</li>
@@ -158,7 +158,7 @@
                         <h3 class="text-lg font-bold text-white">Other Technologies</h3>
                     </div>
                     <ul class="space-y-1">
-                        <li class="skill-item"><i class="fab fa-python text-yellow-300"></i> Python & Raspberry Pi</li>
+                        <li class="skill-item"><i class="fab fa-python text-yellow-300"></i> Python, Django & Raspberry Pi</li>
                         <li class="skill-item"><i class="fab fa-react text-cyan-400"></i> React & TypeScript</li>
                         <li class="skill-item"><i class="fab fa-microsoft text-blue-500"></i> .NET & Blazor</li>
                         <li class="skill-item"><i class="fas fa-book text-slate-400"></i> Clean Code & SOLID</li>
@@ -416,12 +416,12 @@
                     <div class="flex items-center gap-4">
                         <span class="icon-tile accent-amber"><i class="fas fa-chess text-lg"></i></span>
                         <div>
-                            <p class="font-mono text-[11px] uppercase tracking-widest text-amber-400">Tournaments + Rankings</p>
+                            <p class="font-mono text-[11px] uppercase tracking-widest text-amber-400">Chess Career Game</p>
                             <h3 class="text-2xl font-bold text-white">Chess Platform</h3>
                         </div>
                     </div>
                     <p class="text-slate-400 text-sm max-w-md md:text-right leading-relaxed">
-                        Chess apps for the lab: a Spring Boot REST API for seasons, tournaments, games and rankings, plus a web app and a playable game client.
+                        A chess career game: seasons and tournaments run by a Spring Boot API, a React player dashboard and a playable Django game with Stockfish. Deployed to K3s on ARM64.
                     </p>
                 </div>
 
@@ -432,20 +432,19 @@
                             <span class="badge">Backend</span>
                         </div>
                         <h4 class="text-xl font-bold text-white mb-2">Chess REST API</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Backend for chess data and workflows: seasons, tournaments, games, players, titles and rankings. HATEOAS REST API with Swagger docs, Prometheus metrics and a Jenkins pipeline.</p>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Hexagonal API organised by bounded context: seasons, round-robin, knock-out and Swiss tournaments, games, saves, rankings, awards and achievements. JWT + CSRF security, OpenAPI docs and Prometheus metrics.</p>
                         <div class="flex flex-wrap gap-2 mb-5">
-                            <span class="tech">Java 21</span>
-                            <span class="tech">Spring Boot 3.3</span>
+                            <span class="tech">Java 25</span>
+                            <span class="tech">Spring Boot 4.1</span>
                             <span class="tech">MariaDB</span>
                             <span class="tech">Spring HATEOAS</span>
-                            <span class="tech">Jenkins</span>
+                            <span class="tech">Testcontainers</span>
                         </div>
                         <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
                             <div class="flex gap-4">
-                                <span class="meta meta-ok"><i class="fas fa-circle-check"></i>Lines 99.6%</span>
-                                <span class="meta meta-ver"><i class="fas fa-tag"></i>3.0.0</span>
+                                <span class="meta meta-ver"><i class="fas fa-tag"></i>4.3.3</span>
                             </div>
-                            <a href="https://github.com/MilkyWay-HomeLabs/chess-rest-api-public" class="link-arrow">Repository <i class="fas fa-arrow-right text-xs"></i></a>
+                            <a href="https://github.com/MilkyWay-HomeLabs/chess-rest-api-public" class="link-arrow" title="Public snapshot (v3.0.0); the current version is private">Public snapshot <i class="fas fa-arrow-right text-xs"></i></a>
                         </div>
                     </article>
 
@@ -455,9 +454,14 @@
                             <span class="badge">Frontend</span>
                         </div>
                         <h4 class="text-xl font-bold text-white mb-2">Chess Web App</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Chess web page providing the user interface for the platform, backed by the Chess REST API.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-white/5">
-                            <span class="meta"><i class="fas fa-hammer"></i>In development</span>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">The player's hub: next match, calendar, tournament tables and knock-outs, rankings, awards, trophies, match history, game saves and player profiles, with light and dark themes.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="tech">React 19</span>
+                            <span class="tech">React Router 6</span>
+                            <span class="tech">Jest + RTL</span>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
+                            <span class="meta meta-ver"><i class="fas fa-tag"></i>1.1.3</span>
                             <span class="meta" title="This repository is private"><i class="fas fa-lock"></i>Private repository</span>
                         </div>
                     </article>
@@ -468,9 +472,14 @@
                             <span class="badge">Game Client</span>
                         </div>
                         <h4 class="text-xl font-bold text-white mb-2">Chess Game App</h4>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Chess game application that lets users play chess, backed by the Chess REST API.</p>
-                        <div class="flex items-center justify-between pt-4 border-t border-white/5">
-                            <span class="meta"><i class="fas fa-hammer"></i>In development</span>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-5 flex-grow">Playable chess against the CPU or another human. Move legality via python-chess, Stockfish for CPU moves, analysis and in-game AI hints, plus Prometheus metrics and a Grafana dashboard.</p>
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="tech">Python</span>
+                            <span class="tech">Django 5.2</span>
+                            <span class="tech">Stockfish</span>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-white/5">
+                            <span class="meta meta-ver"><i class="fas fa-tag"></i>1.11.1</span>
                             <span class="meta" title="This repository is private"><i class="fas fa-lock"></i>Private repository</span>
                         </div>
                     </article>
